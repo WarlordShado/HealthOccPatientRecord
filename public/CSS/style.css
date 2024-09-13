@@ -1,0 +1,53 @@
+#VisitInput {
+    border: 5px solid black;
+    padding: 5px;
+}
+
+#Form {
+    z-index: 1;
+    width: 56%;
+    float:right;
+}
+
+#Record {
+    z-index: -1;
+    width: 44%;
+    float:left;
+}
+
+#RecordTitle {
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 5px;
+    font-size:26px;
+    font-weight: 15px;
+}
+
+#PatientPhoto {
+    border: 5px solid black;
+    width:250px;
+    height:200px;
+}
+
+#PatientRecord{
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.PatientInfo:not(#PhotoContain) {
+    padding: 10px;
+}
+
+.info .labelInfo {
+    text-align: center;
+}
+
+.info {
+    font-size: 25px;
+}
+
+.submit {
+    text-align: center;
+    column-span: 1;
+}
+

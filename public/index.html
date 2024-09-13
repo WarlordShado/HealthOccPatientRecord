@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="CSS/style.css">
+
+<!--
+    To-Do:
+        Make Form Prettier
+        Input for Temp, Pulse, Resperations, Pulse Ox, blood pressure, and pain scale rating
+        Make info for previous visits appear below form
+        Make patient info changable if needed
+        Prescription Meds Tab with Vaccine Info on Person
+
+    Once Server Up:
+        Write PHP script to get data in and out of database
+        JS script to put data onto web page
+        Accounts w/ Admin One to veiw everything that happens on the page
+
+    If Time remains:
+        Lab Results (Maybe scan in paper, prolly not)
+        X-Ray results
+        Other Test and Procedures Tab
+        if lots of time, Scheduling System
+-->
+
+<html>
+    <div id="Record">
+        <table id="PatientRecord">
+            <tr>
+                <td class="PatientInfo" ></td>
+            </tr>
+            <tr >
+                <td class="PatientInfo" id="RecordTitle" colspan="5">
+                Patient Info
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" id="PhotoContain">
+                    <img id="PatientPhoto" src="Photo\person.png" alt="person">
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Title: </span><br>
+                    <span class="info">Mr.</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">First Name: </span><br>
+                    <span class="info">John</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Middle Initial: </span><br>
+                    <span class="info">B</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Last Name: </span><br>
+                    <span class="info">Doe</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" id="RecordTitle" colspan="5"> 
+                    Contact Info
+                </td>
+            </tr>
+            <tr>
+                <td  class="PatientInfo">
+                    <span class="labelInfo" >Address: </span><br>
+                    <span class="info" style="font-size:20px;">252 Main St. Bethel PA 19507</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Phone Number: </span><br>
+                    <span class="info">610-767-2423</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo" >Emergency Contact Name: </span><br>
+                    <span class="info">Jane Doe</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Emergency Contact Phone Number: </span><br>
+                    <span class="info">717-768-2178</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Relationship: </span><br>
+                    <span class="info">Sister</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" id="RecordTitle" colspan="5"> 
+                    Important Info
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo" >Insurance Provider: </span><br>
+                    <span class="info">Capital One</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Insurance Number: </span><br>
+                    <span class="info">3214-614</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Allergies: </span><br>
+                    <span class="info">Peanuts, Penicillin, Tree Nuts</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<!--Form for inputting Visit Info-->
+
+    <div id="Form">
+        <form id="VisitInput">
+            <label class="textInputLabel" for="reason">Reason for Visit:</label><br>
+            <textarea class="textInput" name="reason" cols="50" rows="2"></textarea><br>
+            <label class="textInputLabel" for="note">Notes:</label><br>
+            <textarea class="textInput" name="note" cols="50" rows="10"></textarea><br>
+            <input type="submit"  value="Submit">
+            <input type="reset"  value="Reset">
+        </form>
+        <article id="PreviousNotes">
+
+        </article>
+    </div>
+</html>
