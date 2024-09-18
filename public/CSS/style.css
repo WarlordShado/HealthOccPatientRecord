@@ -1,41 +1,116 @@
 #VisitInput {
-    border: 5px solid black;
-    padding: 5px;
+    border:5px var(--border);
+    padding:0.26vw;
+}
+
+.VisitSection {
+    padding: 0.26vw;
+}
+
+#FormButtons {
+    text-align: center;
+    margin: 0.26vw;
+}
+
+.formButton {
+    border:5px var(--border);
+    background-color: var(--textBox);
+    color: var(--text);
+    font-size: larger;
+    width: 5.208vw;
+    height:2.604vw;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+#info {
+    display:inline-flex;
+}
+
+#Title {
+    text-align: center;
+    color: var(--text);
+    margin-top: 5.208vw;
+    font-size:5vw;
+}
+
+#MainPage {
+    display:inline-flex;
 }
 
 #Form {
     z-index: 1;
-    width: 56%;
     float:right;
 }
 
 #Record {
     z-index: -1;
-    width: 44%;
     float:left;
 }
 
-#RecordTitle {
+#Login {
+    margin: auto;
+    width:15.625vw;
+    border: 5px var(--border);
+    padding:0.26vw;
+    border-radius:20px;
+    font-size: x-large;
+}
+
+.labelInfo {
+    color: var(--textTitle)
+}
+
+.info {
+    color: var(--text);
+}
+
+.RecordTitle {
+    background-color: var(--bgLabel);
+    color: var(--textTitle);
     text-align: center;
-    border: 5px solid black;
-    border-radius: 5px;
+    border: 5px var(--border);
     font-size:26px;
     font-weight: 15px;
 }
 
+.textLabel {
+    color: var(--text);
+}
+
 #PatientPhoto {
-    border: 5px solid black;
-    width:250px;
-    height:200px;
+    border: 3px var(--border);
+    width:13.021vw;
+    height:10.417vw;
 }
 
 #PatientRecord{
-    border: 5px solid black;
-    border-radius: 5px;
+    border:5px var(--border);
+    height:44.2vw
+}
+
+#PreviousNotes {
+    padding: 0.26vw;
+    padding-bottom: 1.797vw;
+    border: 5px var(--border);
+    height:17.3vw;
+    width:60vw;
+}
+
+#newPatForm {
+    float:right;
+    margin-left:35vw;
+}
+
+.infoSet {
+    border: 5px var(--border);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .PatientInfo:not(#PhotoContain) {
-    padding: 10px;
+    padding: 0.521vw;
 }
 
 .info .labelInfo {
@@ -43,7 +118,22 @@
 }
 
 .info {
-    font-size: 25px;
+    font-size: 1.302vw;
+}
+
+.text {
+    color: var(--text);
+    font-size: 0.833vw;
+}
+
+.textBox {
+    background-color: var(--bgLabel);
+    border: 1px var(--border);
+}
+
+.newText {
+    margin-left:0.521vw;
+    float: right;
 }
 
 .submit {

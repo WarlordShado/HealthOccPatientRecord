@@ -1,25 +1,94 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="CSS/vari.css">
 <link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/nav.css">
 <html>
-    <header>
-                    
-    </header>
     <body>
-        <form id="recordInput">
-            <table>
-                <tr>
-                    <td class="textInputLabel"><label for="fname">First Name:</label></td>
-                    <td class="textInput" ><input type="text" id="formFname" name="fname"></td>
-                </tr>
-                <tr>
-                    <td class="textInputLabel"><label for="lname">Last Name:</label></td>
-                    <td class="textInput" ><input type="text" name="lname"><br></td>
-                </tr>
-                <tr class="submit">
-                    <td colspan="2"><input type="submit"  value="Submit"></td>
-                </tr>
-            </table>
-        </form>
+        <div class="topnav">
+            <p class="linkContain"><a class="navButton" href="record.html">View Records</a></p>
+            <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
+            <p class="linkContain"><a class="navButton">Account Settings</a></p>
+            <div id="Search">
+                <label class="textLabel" for="search">Search:</label>
+                <textarea name="search" class="text" id="SearchBar" rows="1"></textarea>
+            </div>
+        </div>
+
+        <div id="MainPage">
+            <div id="NewPatient">
+                <form id="newPatForm">
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Picture: </span>
+                    <span class="text newText" name="pic" id="patPic"><input class="text textBox" type="file" form="newPatForm"></span><br>
+                </fieldset>
+            
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Title*: </span>
+                    <span class="text newText" name="title" id="patTitle"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>
+            
+                <fieldset class="infoSet">  
+                    <span class="labelInfo">First Name*: </span>
+                    <span class="text newText" name="first" id="patName"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>  
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Middle Initial*: </span>
+                    <span class="text newText" name="middle" id="patMiddle"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset> 
+                     
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Last Name*: </span>
+                    <span class="text newText" name="last" id="patLast"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo" >Address*: </span>
+                    <span class="text newText" name="address" id="patAddress"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>  
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Phone Number*: </span>
+                    <span class="text newText" name="phone" id="patPhone"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo" >Emergency Contact Name*: </span>
+                    <span class="text newText" name="emercontact" id="patEC"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>     
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Emergency Contact Phone Number*: </span>
+                    <span class="text newText" name="ecphone" id="patECPhone"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Relationship*: </span>
+                    <span class="text newText" name="relationship" id="patECRelation"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo" >Insurance Provider*: </span>
+                    <span class="text newText" name="insurProvide" id="patInsurProvide"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Insurance Number*: </span>
+                    <span class="text newText" name="insurNumber" id="patInsurNumber"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset>  
+
+                <fieldset class="infoSet">
+                    <span class="labelInfo">Allergies*: </span>
+                    <span class="text newText" name="allergy" id="patAllergy"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                </fieldset> 
+
+                <fieldset class="infoSet" align="center">
+                    <span><input class="formButton" type="submit" value="Submit" form="newPatForm"></span>
+                    <span><input class="formButton" type="reset" value="Reset" form="newPatForm"></span>
+                </fieldset>
+                </form>
+            </div>
+        </div>
     </body>
     
 </html>

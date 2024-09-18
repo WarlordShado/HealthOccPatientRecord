@@ -1,0 +1,38 @@
+
+
+#Search{
+    margin-left:auto;
+    padding: 1.563vw;
+}
+
+.topnav {
+    border: 5px var(--border);
+    border-radius: 3px;
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg);
+}
+
+.linkContain {
+    float:left;
+}
+
+.navButton {
+    display:block;
+    color: var(--textTitle);
+    text-align: center;
+    padding: 14px 16px;
+    margin:5px;
+    text-decoration: none;
+    border:1px solid var(--bg);
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.navButton:hover {
+    background-color: var(--bgLabel);
+    border:1px solid var(--textTitle);
+}

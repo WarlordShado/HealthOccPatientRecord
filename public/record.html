@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="CSS/vari.css">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/nav.css">
+
+<!--
+    To-Do:
+        DONE (kind of) - Make Form Prettier
+        DONE - Input for Temp, Pulse, Resperations, Pulse Ox, blood pressure, and pain scale rating
+        Make info for previous visits appear below form. Add button to veiw entire record
+        Make patient info changable if needed
+        Prescription Meds Tab with Vaccine Info on Person
+
+    Once Server Up:
+        Write PHP script to get data in and out of database
+        JS to put data onto web page
+        Accounts w/ Admin One to veiw everything that happens on the page
+
+    If Time remains:
+        Lab Results (Maybe scan in paper, prolly not)
+        X-Ray results
+        Other Test and Procedures Tab
+        if lots of time, Scheduling System
+-->
+
+<html>
+    <body>
+        <div class="topnav">
+        <p class="linkContain"><a class="navButton" href="record.html">View Records</a></p>
+        <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
+        <p class="linkContain"><a class="navButton">Account Settings</a></p>
+        <div id="Search">
+            <label class="textLabel" for="search">Search:</label>
+            <textarea name="search" class="text textBox" id="SearchBar" rows="1"></textarea>
+        </div>
+    </div>
+
+    <div id="MainPage">
+        <div id="Record">
+        <table id="PatientRecord">
+            <tr >
+                <td class="PatientInfo RecordTitle" colspan="5">
+                    Patient Info
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" id="PhotoContain">
+                    <img id="PatientPhoto" src="Photo\person.png" alt="person">
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Title: </span><br>
+                    <span class="info" id="patTitle">Mr.</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">First Name: </span><br>
+                    <span class="info" id="patName">John</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Middle Initial: </span><br>
+                    <span class="info" id="patMiddle">B</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Last Name: </span><br>
+                    <span class="info" id="patLast">Doe</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo RecordTitle" colspan="5"> 
+                    Contact Info
+                </td>
+            </tr>
+            <tr>
+                <td  class="PatientInfo">
+                    <span class="labelInfo" >Address: </span><br>
+                    <span class="info" style="font-size:20px;" id="patAddress">252 Main St. Bethel PA 19507</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Phone Number: </span><br>
+                    <span class="info" id="patPhone">610-767-2423</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo" >Emergency Contact Name: </span><br>
+                    <span class="info" id="patEC">Jane Doe</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Emergency Contact Phone Number: </span><br>
+                    <span class="info" id="patECPhone">717-768-2178</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Relationship: </span><br>
+                    <span class="info" id="patECRelation">Sister</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo RecordTitle" colspan="5"> 
+                    Important Info
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo" >Insurance Provider: </span><br>
+                    <span class="info" id="patInsurProvide">Capital One</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Insurance Number: </span><br>
+                    <span class="info" id="patInsurNumber">3214-614</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Allergies: </span><br>
+                    <span class="info" id="patAllergy">Peanuts, Penicillin, Tree Nuts</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<!--Form for inputting Visit Info-->
+
+    <div id="Form" >
+        <form id="VisitInput">
+            <div id="info">
+                <div class="VisitSection">
+                    <label class="textLabel" for="reason">Reason for Visit:</label><br>
+                    <textarea class="text textBox" name="reason" cols="50" rows="2"></textarea><br><br>
+                    <label class="textLabel" for="note">Notes:</label><br>
+                    <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
+                    <label class="textLabel" for="treat">Treatment Plan:</label><br>
+                    <textarea class="text textBox" name="treat" cols="50" rows="2"></textarea><br><br>
+                </div>
+                <div class="VisitSection">
+                    <label class="textLabel" for="temp">Temperature: </label>
+                    <input class="text textBox" type="text" name="temp">
+                    <label class="textLabel" for="tempSelect`"></label>
+    
+                    <select name="tempSelect" id="methodTemp" class="text textBox">
+                        <option value="" selected hidden disabled>Select Method</option>
+                        <option value="temporal">Temporal</option>
+                        <option value="oral">Oral</option>
+                        <option value="rectal">Rectal</option>
+                        <option value="axillary">Axillary</option>
+                        <option value="tympanic">Tympanic</option>
+                    </select><br><br>
+    
+                    <label class="textLabel" for="pulse">Pulse: </label>
+                    <input class="text textBox" name="pulse" type="text">
+                    <label class="textLabel" for="site">Site: </label>
+                    <input class="text textBox" name="site" type="text"><br><br>
+    
+                    <label class="textLabel" for="resp">Respirations: </label>
+                    <input class="text textBox" name="resp" type="text"><br><br>
+    
+                    <label class="textLabel" for="bp">Blood Pressure: </label>
+                    <input class="text textBox" type="text" name="bp"><br>
+    
+                    <input class="textLabel" id="auto "type="radio" name="bpMethod">
+                    <label class="textLabel" for="auto">Automatic</label><br>
+    
+                    <input class="textLabel" id="manuel"type="radio" name="bpMethod">
+                    <label class="textLabel" for="manuel">Manuel</label><br><br>
+    
+                    <label class="textLabel" for="pulseOx">Pulse Ox: </label>
+                    <input class="text textBox" name="pulseOx" type="text"><br><br>
+    
+                    <label class="textLabel" for="pain">Pain Scale Rating: </label>
+                    <input class="text textBox" name="pain" type="text"><br><br><br>
+                    
+                    <div id="FormButtons">
+                        <button class="formButton" type="submit" value="Submit">Submit</button>
+                        <button class="formButton" type="reset" value="Reset">Reset</button>
+                    </div>
+                </div><br>
+            </div>
+        </form>
+
+        <div id="PreviousNotes">
+            <label class="textLabel" for="date" >Date:</label><br>
+            <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea><br>
+            <label class="textLabel" for="note">Notes:</label><br>
+            <textarea class="text textBox" name="note" cols="110" rows="10" disabled></textarea><br>
+            <label class="textLabel" for="dateEnter">Enter Date:</label><br>
+            <textarea class="text textBox" name="dateEnter" cols="10" rows="1" ></textarea><br>
+        </div>
+    
+    </div>
+
+
+    
+    </div>
+
+    </body>
+
+    
+</html>
