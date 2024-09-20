@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="CSS/vari.css">
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="CSS/nav.css">
 
 <!--
     To-Do:
-        DONE (kind of) - Make Form Prettier
+        DONE - Make Form Prettier
         DONE - Input for Temp, Pulse, Resperations, Pulse Ox, blood pressure, and pain scale rating
         Make info for previous visits appear below form. Add button to veiw entire record
         Make patient info changable if needed
@@ -26,18 +27,14 @@
 <html>
     <body>
         <div class="topnav">
-        <p class="linkContain"><a class="navButton" href="record.html">View Records</a></p>
+        <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
         <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
         <p class="linkContain"><a class="navButton">Account Settings</a></p>
-        <div id="Search">
-            <label class="textLabel" for="search">Search:</label>
-            <textarea name="search" class="text textBox" id="SearchBar" rows="1"></textarea>
-        </div>
     </div>
 
     <div id="MainPage">
-        <div id="Record">
-        <table id="PatientRecord">
+        <div id="Record" >
+        <table id="PatientRecord" class="sticky">
             <tr >
                 <td class="PatientInfo RecordTitle" colspan="5">
                     Patient Info
@@ -122,15 +119,21 @@
     <div id="Form" >
         <form id="VisitInput">
             <div id="info">
-                <div class="VisitSection">
+                <div class="VisitSection basicInfo">
+                    <label class="textLabel" for="reason">Phyisican Name:</label><br>
+                    <textarea class="text textBox" name="reason" cols="25" rows="2"></textarea><br><br>
                     <label class="textLabel" for="reason">Reason for Visit:</label><br>
-                    <textarea class="text textBox" name="reason" cols="50" rows="2"></textarea><br><br>
+                    <textarea class="text textBox" name="reason" cols="40" rows="2"></textarea><br><br>
                     <label class="textLabel" for="note">Notes:</label><br>
                     <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
+                    <label class="textLabel" for="primaryDia">Primary Diagnosis:</label>
+                    <label class="textLabel" for="secondaryDia" style="margin-left:3vw;">Secondary Diagnosis:</label><br>
+                    <textarea class="text textBox" name="primaryDia" cols="20" rows="2"></textarea>
+                    <textarea class="text textBox" name="secondaryDia" cols="20" rows="2"></textarea><br><br>
                     <label class="textLabel" for="treat">Treatment Plan:</label><br>
                     <textarea class="text textBox" name="treat" cols="50" rows="2"></textarea><br><br>
                 </div>
-                <div class="VisitSection">
+                <div class="VisitSection vitals">
                     <label class="textLabel" for="temp">Temperature: </label>
                     <input class="text textBox" type="text" name="temp">
                     <label class="textLabel" for="tempSelect`"></label>
@@ -145,7 +148,7 @@
                     </select><br><br>
     
                     <label class="textLabel" for="pulse">Pulse: </label>
-                    <input class="text textBox" name="pulse" type="text">
+                    <input class="text textBox" name="pulse" type="text"><br>
                     <label class="textLabel" for="site">Site: </label>
                     <input class="text textBox" name="site" type="text"><br><br>
     
@@ -174,22 +177,24 @@
                 </div><br>
             </div>
         </form>
+        
+            <div id="PreviousNotes">
+                <label class="textLabel" for="date" >Date:</label><br>
+                <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea><br>
+                <label class="textLabel" for="note">Notes:</label><br>
+                <textarea class="text textBox" name="note" cols="110" rows="10" disabled></textarea><br>
+                <label class="textLabel" for="dateEnter">Enter Date:</label><br>
+                <textarea class="text textBox" name="dateEnter" cols="10" rows="1" ></textarea>
 
-        <div id="PreviousNotes">
-            <label class="textLabel" for="date" >Date:</label><br>
-            <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea><br>
-            <label class="textLabel" for="note">Notes:</label><br>
-            <textarea class="text textBox" name="note" cols="110" rows="10" disabled></textarea><br>
-            <label class="textLabel" for="dateEnter">Enter Date:</label><br>
-            <textarea class="text textBox" name="dateEnter" cols="10" rows="1" ></textarea><br>
+                <div style="float:right;">
+                    <button class="formButton"><p style="height:5px; margin-top: -4px;"> <--- </p></button>
+                    <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea>
+                    <button class="formButton" ><p style="height:5px; margin-top: -4px;"> ---> </p></button>
+                </div>
+                
+            </div>
         </div>
-    
     </div>
-
-
-    
-    </div>
-
     </body>
 
     

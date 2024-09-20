@@ -4,7 +4,17 @@
 }
 
 .VisitSection {
-    padding: 0.26vw;
+    padding: 1vw;
+}
+
+.basicInfo {
+    border: 1px solid var(--bgLabel);
+}
+
+.vitals {
+    border: 1px solid var(--bgLabel);
+    padding:1vw 4vw 0 4vw;
+    font-size:24px;
 }
 
 #FormButtons {
@@ -17,8 +27,19 @@
     background-color: var(--textBox);
     color: var(--text);
     font-size: larger;
-    width: 5.208vw;
-    height:2.604vw;
+    width: auto;
+    height: auto;
+}
+
+#PatientSelectTable tr{
+    display:flex;
+}
+
+#PatientSelectTable td{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -27,6 +48,7 @@ body {
 
 #info {
     display:inline-flex;
+    flex-grow:1;
 }
 
 #Title {
@@ -41,12 +63,15 @@ body {
 }
 
 #Form {
-    z-index: 1;
     float:right;
 }
 
+.sticky {
+    position:sticky;
+    top:0;
+}
+
 #Record {
-    z-index: -1;
     float:left;
 }
 
@@ -91,9 +116,14 @@ body {
     height:44.2vw
 }
 
+#Diagnosis {
+    padding: 0.26vw;
+    border: 5px var(--border);
+}
+
 #PreviousNotes {
     padding: 0.26vw;
-    padding-bottom: 1.797vw;
+    padding-bottom: .75vw;
     border: 5px var(--border);
     height:17.3vw;
     width:60vw;
@@ -113,6 +143,15 @@ body {
     padding: 0.521vw;
 }
 
+#PatientButtonContain{
+    margin-left:20vw;
+}
+
+.patientButton {
+    display:inline-flex;
+    text-align: center;
+}
+
 .info .labelInfo {
     text-align: center;
 }
@@ -129,6 +168,12 @@ body {
 .textBox {
     background-color: var(--bgLabel);
     border: 1px var(--border);
+    resize: none;
+}
+
+.selectText {
+    color: var(--text);
+    font-size: 24px;
 }
 
 .newText {

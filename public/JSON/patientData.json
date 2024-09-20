@@ -1,0 +1,23 @@
+{
+    "Patients":[
+        {
+            "picLocation":"Photo/person.png",
+            "Title":"Mr.",
+            "FName":"John",
+            "LName":"Doe",
+            "MLetter":"J",
+            "Address":"252 Main St. Bethel PA 19507",
+            "PhoneNum":"610-767-2423",
+            "EMContact":"Jane Doe",
+            "EMPhone":"717-768-2178",
+            "EMRelation":"Sister",
+            "InsuranceProv":"Capital One",
+            "InsuranceNum":"3214-614",
+            "Allergies":[
+                "Peanuts",
+                "Penicillin",
+                "Tree Nuts"
+            ]
+        }
+    ]
+}
