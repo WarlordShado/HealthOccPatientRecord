@@ -32,6 +32,31 @@
     font-size: larger;
 }
 
+.topnavrec {
+    border: 5px var(--border);
+    border-radius: 3px;
+    display:flex;
+    list-style-type: none;
+    background-color: var(--bg);
+}
+
+.navButtonRec {
+    display:block;
+    color: var(--textTitle);
+    text-align: center;
+    padding: 8px 10px;
+    margin-left:15px;
+    text-decoration: none;
+    border:1px solid var(--bg);
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.navButtonRec:hover {
+    background-color: var(--bgLabel);
+    border:1px solid var(--textTitle);
+}
+
 .navButton:hover {
     background-color: var(--bgLabel);
     border:1px solid var(--textTitle);

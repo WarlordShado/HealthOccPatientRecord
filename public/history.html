@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CSS/vari.css">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/nav.css">
+
+<html>
+    <body>
+        <div class="topnav">
+            <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
+            <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
+            <p class="linkContain"><a class="navButton">Account Settings</a></p>
+        </div>
+
+        <div class="topnavrec">
+            <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="history.html">History</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="meds.html">Medication</a></p>
+        </div>
+
+    <div id="MainPage">
+        <div id="Record" >
+        <table id="PatientRecord" class="sticky">
+            <tr >
+                <td class="PatientInfo RecordTitle" colspan="5">
+                    Patient Info
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" id="PhotoContain">
+                    <img id="PatientPhoto" src="Photo\person.png" alt="person">
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Title: </span><br>
+                    <span class="info" id="patTitle">Mr.</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">First Name: </span><br>
+                    <span class="info" id="patName">John</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Middle Initial: </span><br>
+                    <span class="info" id="patMiddle">J</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Last Name: </span><br>
+                    <span class="info" id="patLast">Jo</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo RecordTitle" colspan="5"> 
+                    Contact Info
+                </td>
+            </tr>
+            <tr>
+                <td  class="PatientInfo">
+                    <span class="labelInfo" >Address: </span><br>
+                    <span class="info" style="font-size:20px;" id="patAddress">252 Main St. Bethel PA 19507</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Phone Number: </span><br>
+                    <span class="info" id="patPhone">610-767-2423</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo" >Emergency Contact Name: </span><br>
+                    <span class="info" id="patEC">Jane Doe</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Emergency Contact Phone Number: </span><br>
+                    <span class="info" id="patECPhone">717-768-2178</span>
+                </td>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Relationship: </span><br>
+                    <span class="info" id="patECRelation">Sister</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo RecordTitle" colspan="5"> 
+                    Important Info
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo" >Insurance Provider: </span><br>
+                    <span class="info" id="patInsurProvide">Capital One</span>
+                </td>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Insurance Number: </span><br>
+                    <span class="info" id="patInsurNumber">3214-614</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo" colspan="3">
+                    <span class="labelInfo">Allergies: </span><br>
+                    <span class="info" id="patAllergy">Peanuts, Penicillin, Tree Nuts</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<!--Form for inputting Visit Info-->
+<div id="VisitInput">
+        <label class="textLabel" for="date" >Date:</label><br>
+        <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea><br>
+        <label class="textLabel" for="note">Notes:</label><br>
+        <textarea class="text textBox" name="note" cols="110" rows="15" disabled></textarea><br>
+        <label class="textLabel" for="note">Vital Info:</label><br>
+        <textarea class="text textBox" name="note" cols="110" rows="20" disabled></textarea><br>
+        <label class="textLabel" for="dateEnter">Enter Date:</label><br>
+        <input class="text textBox" name="dateEnter" type="date"></input>
+
+        <div style="float:right;">
+            <button class="formButton"  onclick="changeNotes(false)"> <--- </button>
+            <textarea class="text textBox" id="numShow" cols="1" rows="1" disabled>1</textarea>
+            <button class="formButton"  onclick="changeNotes(true)"> ---> </button>
+        </div>
+</div>
+<script src="Javascript/noteNumberInc.js"></script>
+</body>

@@ -8,12 +8,12 @@
     To-Do:
         DONE - Make Form Prettier
         DONE - Input for Temp, Pulse, Resperations, Pulse Ox, blood pressure, and pain scale rating
-        Make info for previous visits appear below form. Add button to veiw entire record
+        DONE - Make info for previous visits appear below form. Add button to veiw entire record
         Make patient info changable if needed
-        Prescription Meds Tab with Vaccine Info on Person
+        ALMOST DONE (Just NEED Vaccine) - Prescription Meds Tab with Vaccine Info on Person
 
     Once Server Up:
-        Write PHP script to get data in and out of database
+        Start Generating Webpage with REACT_DOM
         JS to put data onto web page
         Accounts w/ Admin One to veiw everything that happens on the page
 
@@ -27,10 +27,16 @@
 <html>
     <body>
         <div class="topnav">
-        <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
-        <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
-        <p class="linkContain"><a class="navButton">Account Settings</a></p>
-    </div>
+            <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
+            <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
+            <p class="linkContain"><a class="navButton">Account Settings</a></p>
+        </div>
+
+        <div class="topnavrec">
+            <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="history.html">History</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="meds.html">Medication</a></p>
+        </div>
 
     <div id="MainPage">
         <div id="Record" >
@@ -54,11 +60,11 @@
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">Middle Initial: </span><br>
-                    <span class="info" id="patMiddle">B</span>
+                    <span class="info" id="patMiddle">J</span>
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">Last Name: </span><br>
-                    <span class="info" id="patLast">Doe</span>
+                    <span class="info" id="patLast">Jo</span>
                 </td>
             </tr>
             <tr>
@@ -116,86 +122,68 @@
 
 <!--Form for inputting Visit Info-->
 
-    <div id="Form" >
-        <form id="VisitInput">
-            <div id="info">
-                <div class="VisitSection basicInfo">
-                    <label class="textLabel" for="reason">Phyisican Name:</label><br>
-                    <textarea class="text textBox" name="reason" cols="25" rows="2"></textarea><br><br>
-                    <label class="textLabel" for="reason">Reason for Visit:</label><br>
-                    <textarea class="text textBox" name="reason" cols="40" rows="2"></textarea><br><br>
-                    <label class="textLabel" for="note">Notes:</label><br>
-                    <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
-                    <label class="textLabel" for="primaryDia">Primary Diagnosis:</label>
-                    <label class="textLabel" for="secondaryDia" style="margin-left:3vw;">Secondary Diagnosis:</label><br>
-                    <textarea class="text textBox" name="primaryDia" cols="20" rows="2"></textarea>
-                    <textarea class="text textBox" name="secondaryDia" cols="20" rows="2"></textarea><br><br>
-                    <label class="textLabel" for="treat">Treatment Plan:</label><br>
-                    <textarea class="text textBox" name="treat" cols="50" rows="2"></textarea><br><br>
-                </div>
-                <div class="VisitSection vitals">
-                    <label class="textLabel" for="temp">Temperature: </label>
-                    <input class="text textBox" type="text" name="temp">
-                    <label class="textLabel" for="tempSelect`"></label>
-    
-                    <select name="tempSelect" id="methodTemp" class="text textBox">
-                        <option value="" selected hidden disabled>Select Method</option>
-                        <option value="temporal">Temporal</option>
-                        <option value="oral">Oral</option>
-                        <option value="rectal">Rectal</option>
-                        <option value="axillary">Axillary</option>
-                        <option value="tympanic">Tympanic</option>
-                    </select><br><br>
-    
-                    <label class="textLabel" for="pulse">Pulse: </label>
-                    <input class="text textBox" name="pulse" type="text"><br>
-                    <label class="textLabel" for="site">Site: </label>
-                    <input class="text textBox" name="site" type="text"><br><br>
-    
-                    <label class="textLabel" for="resp">Respirations: </label>
-                    <input class="text textBox" name="resp" type="text"><br><br>
-    
-                    <label class="textLabel" for="bp">Blood Pressure: </label>
-                    <input class="text textBox" type="text" name="bp"><br>
-    
-                    <input class="textLabel" id="auto "type="radio" name="bpMethod">
-                    <label class="textLabel" for="auto">Automatic</label><br>
-    
-                    <input class="textLabel" id="manuel"type="radio" name="bpMethod">
-                    <label class="textLabel" for="manuel">Manuel</label><br><br>
-    
-                    <label class="textLabel" for="pulseOx">Pulse Ox: </label>
-                    <input class="text textBox" name="pulseOx" type="text"><br><br>
-    
-                    <label class="textLabel" for="pain">Pain Scale Rating: </label>
-                    <input class="text textBox" name="pain" type="text"><br><br><br>
-                    
-                    <div id="FormButtons">
-                        <button class="formButton" type="submit" value="Submit">Submit</button>
-                        <button class="formButton" type="reset" value="Reset">Reset</button>
+        <div id="Form" >
+            <form id="VisitInput">
+                <div id="info">
+                    <div class="VisitSection basicInfo">
+                        <label class="textLabel" for="reason">Phyisican Name:</label><br>
+                        <textarea class="text textBox" name="reason" cols="25" rows="2"></textarea><br><br>
+                        <label class="textLabel" for="reason">Reason for Visit:</label><br>
+                        <textarea class="text textBox" name="reason" cols="40" rows="2"></textarea><br><br>
+                        <label class="textLabel" for="note">Notes:</label><br>
+                        <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
+                        <label class="textLabel" for="primaryDia">Primary Diagnosis:</label>
+                        <label class="textLabel" for="secondaryDia" style="margin-left:3vw;">Secondary Diagnosis:</label><br>
+                        <textarea class="text textBox" name="primaryDia" cols="20" rows="2"></textarea>
+                        <textarea class="text textBox" name="secondaryDia" cols="20" rows="2"></textarea><br><br>
+                        <label class="textLabel" for="treat">Treatment Plan:</label><br>
+                        <textarea class="text textBox" name="treat" cols="50" rows="2"></textarea><br><br>
                     </div>
-                </div><br>
-            </div>
-        </form>
-        
-            <div id="PreviousNotes">
-                <label class="textLabel" for="date" >Date:</label><br>
-                <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea><br>
-                <label class="textLabel" for="note">Notes:</label><br>
-                <textarea class="text textBox" name="note" cols="110" rows="10" disabled></textarea><br>
-                <label class="textLabel" for="dateEnter">Enter Date:</label><br>
-                <textarea class="text textBox" name="dateEnter" cols="10" rows="1" ></textarea>
-
-                <div style="float:right;">
-                    <button class="formButton"><p style="height:5px; margin-top: -4px;"> <--- </p></button>
-                    <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea>
-                    <button class="formButton" ><p style="height:5px; margin-top: -4px;"> ---> </p></button>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    </body>
-
+                    <div class="VisitSection vitals">
+                        <label class="textLabel" for="temp">Temperature: </label>
+                        <input class="text textBox" type="text" name="temp">
+                        <label class="textLabel" for="tempSelect`"></label>
     
+                        <select name="tempSelect" id="methodTemp" class="text textBox">
+                            <option value="" selected hidden disabled>Select Method</option>
+                            <option value="temporal">Temporal</option>
+                            <option value="oral">Oral</option>
+                            <option value="rectal">Rectal</option>
+                            <option value="axillary">Axillary</option>
+                            <option value="tympanic">Tympanic</option>
+                        </select><br><br>
+    
+                        <label class="textLabel" for="pulse">Pulse: </label>
+                        <input class="text textBox" name="pulse" type="text"><br>
+                        <label class="textLabel" for="site">Site: </label>
+                        <input class="text textBox" name="site" type="text"><br><br>
+    
+                        <label class="textLabel" for="resp">Respirations: </label>
+                        <input class="text textBox" name="resp" type="text"><br><br>
+    
+                        <label class="textLabel" for="bp">Blood Pressure: </label>
+                        <input class="text textBox" type="text" name="bp"><br>
+    
+                        <input class="textLabel" id="auto "type="radio" name="bpMethod">
+                        <label class="textLabel" for="auto">Automatic</label><br>
+    
+                        <input class="textLabel" id="manuel"type="radio" name="bpMethod">
+                        <label class="textLabel" for="manuel">Manuel</label><br><br>
+    
+                        <label class="textLabel" for="pulseOx">Pulse Ox: </label>
+                        <input class="text textBox" name="pulseOx" type="text"><br><br>
+    
+                        <label class="textLabel" for="pain">Pain Scale Rating: </label>
+                        <input class="text textBox" name="pain" type="text"><br><br><br>
+                    
+                        <div id="FormButtons">
+                            <button class="formButton" type="submit" value="Submit">Submit</button>
+                            <button class="formButton" type="reset" value="Reset">Reset</button>
+                        </div>
+                    </div><br>
+                </div>
+            </form> 
+        </div>
+        </div>
+    </body>
 </html>
