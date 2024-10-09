@@ -5,6 +5,12 @@
 <link rel="stylesheet" href="CSS/nav.css">
 
 <html>
+    <head>
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    </head>
     <body>
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
@@ -18,104 +24,112 @@
             <p class="linkContain"><a class="navButtonRec" href="meds.html">Medication</a></p>
         </div>
 
-    <div id="MainPage">
-        <div id="Record" >
-        <table id="PatientRecord" class="sticky">
-            <tr >
-                <td class="PatientInfo RecordTitle" colspan="5">
-                    Patient Info
-                </td>
-            </tr>
-            <tr>
-                <td class="PatientInfo" id="PhotoContain">
-                    <img id="PatientPhoto" src="Photo\person.png" alt="person">
-                </td>
-                <td class="PatientInfo">
-                    <span class="labelInfo">Title: </span><br>
-                    <span class="info" id="patTitle">Mr.</span>
-                </td>
-                <td class="PatientInfo">
-                    <span class="labelInfo">First Name: </span><br>
-                    <span class="info" id="patName">John</span>
-                </td>
-                <td class="PatientInfo">
-                    <span class="labelInfo">Middle Initial: </span><br>
-                    <span class="info" id="patMiddle">J</span>
-                </td>
-                <td class="PatientInfo">
-                    <span class="labelInfo">Last Name: </span><br>
-                    <span class="info" id="patLast">Jo</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="PatientInfo RecordTitle" colspan="5"> 
-                    Contact Info
-                </td>
-            </tr>
-            <tr>
-                <td  class="PatientInfo">
-                    <span class="labelInfo" >Address: </span><br>
-                    <span class="info" style="font-size:20px;" id="patAddress">252 Main St. Bethel PA 19507</span>
-                </td>
-                <td class="PatientInfo" colspan="3">
-                    <span class="labelInfo">Phone Number: </span><br>
-                    <span class="info" id="patPhone">610-767-2423</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="PatientInfo">
-                    <span class="labelInfo" >Emergency Contact Name: </span><br>
-                    <span class="info" id="patEC">Jane Doe</span>
-                </td>
-                <td class="PatientInfo" colspan="3">
-                    <span class="labelInfo">Emergency Contact Phone Number: </span><br>
-                    <span class="info" id="patECPhone">717-768-2178</span>
-                </td>
-                <td class="PatientInfo">
-                    <span class="labelInfo">Relationship: </span><br>
-                    <span class="info" id="patECRelation">Sister</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="PatientInfo RecordTitle" colspan="5"> 
-                    Important Info
-                </td>
-            </tr>
-            <tr>
-                <td class="PatientInfo">
-                    <span class="labelInfo" >Insurance Provider: </span><br>
-                    <span class="info" id="patInsurProvide">Capital One</span>
-                </td>
-                <td class="PatientInfo" colspan="3">
-                    <span class="labelInfo">Insurance Number: </span><br>
-                    <span class="info" id="patInsurNumber">3214-614</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="PatientInfo" colspan="3">
-                    <span class="labelInfo">Allergies: </span><br>
-                    <span class="info" id="patAllergy">Peanuts, Penicillin, Tree Nuts</span>
-                </td>
-            </tr>
-        </table>
-    </div>
+        <div id="MainPage">
+            <div id="Record" >
+            <table id="PatientRecord" class="sticky">
+                <tr >
+                    <td class="PatientInfo RecordTitle" colspan="5">
+                        Patient Info
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo" id="PhotoContain">
+                        <img id="PatientPhoto" src="" alt="person">
+                    </td>
+                    <td class="PatientInfo">
+                        <span class="labelInfo">Title: </span><br>
+                        <span class="info" id="patTitle"></span>
+                    </td>
+                    <td class="PatientInfo">
+                        <span class="labelInfo">First Name: </span><br>
+                        <span class="info" id="patFName"></span>
+                    </td>
+                    <td class="PatientInfo">
+                        <span class="labelInfo">Middle Initial: </span><br>
+                        <span class="info" id="patMName"></span>
+                    </td>
+                    <td class="PatientInfo">
+                        <span class="labelInfo">Last Name: </span><br>
+                        <span class="info" id="patLName"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo">
+                        <span class="labelInfo">Birth Date: </span><br>
+                        <span class="info" id="patBDay"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo RecordTitle" colspan="5"> 
+                        Contact Info
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="PatientInfo">
+                        <span class="labelInfo" >Address: </span><br>
+                        <span class="info" style="font-size:20px;" id="patAddress"></span>
+                    </td>
+                    <td class="PatientInfo" colspan="3">
+                        <span class="labelInfo">Phone Number: </span><br>
+                        <span class="info" id="patPhoneNum"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo">
+                        <span class="labelInfo" >Emergency Contact Name: </span><br>
+                        <span class="info" id="patEMContactName"></span>
+                    </td>
+                    <td class="PatientInfo" colspan="3">
+                        <span class="labelInfo">Emergency Contact Phone Number: </span><br>
+                        <span class="info" id="patEMContactPhone"></span>
+                    </td>
+                    <td class="PatientInfo">
+                        <span class="labelInfo">Relationship: </span><br>
+                        <span class="info" id="patEMRelation"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo RecordTitle" colspan="5"> 
+                        Important Info
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo">
+                        <span class="labelInfo" >Insurance Provider: </span><br>
+                        <span class="info" id="patInsureProv"></span>
+                    </td>
+                    <td class="PatientInfo" colspan="3">
+                        <span class="labelInfo">Insurance Number: </span><br>
+                        <span class="info" id="patInsureNum"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="PatientInfo" colspan="3">
+                        <span class="labelInfo">Allergies: </span><br>
+                        <span class="info" id="patAllergies"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
 <!--Form for inputting Visit Info-->
 <div id="VisitInput">
         <label class="textLabel" for="date" >Date:</label><br>
-        <textarea class="text textBox" name="date" cols="10" rows="1" disabled></textarea><br>
+        <textarea class="text textBox" id="Date" name="date" cols="10" rows="1" disabled></textarea><br>
         <label class="textLabel" for="note">Notes:</label><br>
-        <textarea class="text textBox" name="note" cols="110" rows="15" disabled></textarea><br>
+        <textarea class="text textBox" id="Notes" name="note" cols="110" rows="15" disabled></textarea><br>
         <label class="textLabel" for="note">Vital Info:</label><br>
-        <textarea class="text textBox" name="note" cols="110" rows="20" disabled></textarea><br>
+        <textarea class="text textBox" id="VitalInfo" name="note" cols="110" rows="20" disabled></textarea><br>
         <label class="textLabel" for="dateEnter">Enter Date:</label><br>
-        <input class="text textBox" name="dateEnter" type="date"></input>
+        <input class="text textBox" id="datePicker" name="dateEnter" type="text"></input>
 
         <div style="float:right;">
-            <button class="formButton"  onclick="changeNotes(false)"> <--- </button>
+            <button class="formButton historyIncButton" id="hisDec"> <--- </button>
             <textarea class="text textBox" id="numShow" cols="1" rows="1" disabled>1</textarea>
-            <button class="formButton"  onclick="changeNotes(true)"> ---> </button>
+            <button class="formButton historyIncbutton" id="hisInc"> ---> </button>
         </div>
 </div>
-<script src="Javascript/noteNumberInc.js"></script>
+    <script type="module" src="Javascript/GenerateHistory.js"></script>
+    <script type="module" src="Javascript/RecordGen.js"></script>
+    <script type="module" src="Javascript/util.js"></script>
 </body>

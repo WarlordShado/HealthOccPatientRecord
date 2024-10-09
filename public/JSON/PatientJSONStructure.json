@@ -1,0 +1,312 @@
+{
+
+    "JohnJo":{
+        "Title":"Mr",
+        "FName":"John",
+        "MName":"J",
+        "LName":"Jo",
+        "BDay":"7/8/1997",
+        "Address":"252 Main St. Bethel PA 19507",
+        "PhoneNum":"610-767-2423",
+        "EMContactName":"Jane Doe",
+        "EMContactPhone":"717-768-2178",
+        "EMRelation":"Sister",
+        "InsureProv":"Capital One",
+        "InsureNum":"3214-614",
+        "Allergies":[
+            "Peanuts",
+            "Penecillin",
+            "Tree Nuts"
+        ],
+        "Vitals":[
+            {
+                "Date":"10/3/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"90",
+                "TempSite":"Oral",
+                "Pulse":"75",
+                "PulseOx":"100",
+                "PulseSite":"Arm",
+                "Respirations":"100",
+                "BP":"120/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Flu",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"These are Notes!",
+                    "Treatment":"Flu Shot"
+                }
+            },
+            {
+                "Date":"10/4/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"92",
+                "TempSite":"Ear",
+                "Pulse":"82",
+                "PulseOx":"99",
+                "PulseSite":"Arm",
+                "Respirations":"110",
+                "BP":"123/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Stage 17 Brain Cancer",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"How is this guy alive?",
+                    "Treatment":"Chemotherapy"
+                }
+            },
+            {
+                "Date":"10/5/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"52",
+                "TempSite":"Rectal",
+                "Pulse":"0",
+                "PulseOx":"0",
+                "PulseSite":"Arm",
+                "Respirations":"0",
+                "BP":"0",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Dead",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Died from Stage 17 Cancer",
+                    "Treatment":"Funeral"
+                }
+            }
+        ]
+    },
+
+    "JoJames":{
+        "Title":"Mrs",
+        "FName":"Jo",
+        "MName":"M",
+        "LName":"James",
+        "BDay":"8/10/1997",
+        "Address":"180 Jim St. Pottsville PA 17901",
+        "PhoneNum":"610-767-2423",
+        "EMContactName":"Harold James",
+        "EMContactPhone":"205-758-8989",
+        "EMRelation":"Husband",
+        "InsureProv":"Capital One",
+        "InsureNum":"7134-572",
+        "Allergies":[
+            "Banana Boat Sun Sunscreen"
+        ],
+        "Vitals":[
+            {
+                "Date":"10/3/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"90",
+                "TempSite":"Oral",
+                "Pulse":"75",
+                "PulseOx":"100",
+                "PulseSite":"Arm",
+                "Respirations":"100",
+                "BP":"120/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Salmonella",
+                    "SecDiagnosis":"Food Poisoning",
+                    "Notes":"Raw Chicken from chic-fil-a",
+                    "Treatment":"Penecillin"
+                }
+            },
+            {
+                "Date":"10/4/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"92",
+                "TempSite":"Ear",
+                "Pulse":"82",
+                "PulseOx":"99",
+                "PulseSite":"Arm",
+                "Respirations":"110",
+                "BP":"123/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Cholera",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Got it from drink water form Blue Marsh",
+                    "Treatment":"Penecillin"
+                }
+            },
+            {
+                "Date":"10/3/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"90",
+                "TempSite":"Oral",
+                "Pulse":"75",
+                "PulseOx":"100",
+                "PulseSite":"Arm",
+                "Respirations":"100",
+                "BP":"120/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"N/A",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Bacteria Infections are cured",
+                    "Treatment":"N/A"
+                }
+            }
+        ]
+    },
+
+    "JimmyJohn":{
+        "Title":"Mr",
+        "FName":"Jimmy",
+        "MName":"M",
+        "LName":"John",
+        "BDay":"8/10/1967",
+        "Address":"8910 Jimmy Pkwy. Bethel PA 19507",
+        "PhoneNum":"610-767-2423",
+        "EMContactName":"Chloe John",
+        "EMContactPhone":"215-774-8776",
+        "EMRelation":"Daughter",
+        "InsureProv":"Capital One",
+        "InsureNum":"7134-572",
+        "Allergies":[
+            "N/A"
+        ],
+        "Vitals":[
+            {
+                "Date":"10/3/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"90",
+                "TempSite":"Oral",
+                "Pulse":"75",
+                "PulseOx":"100",
+                "PulseSite":"Arm",
+                "Respirations":"100",
+                "BP":"120/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Cold",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Basic Cold",
+                    "Treatment":"Penecillin"
+                }
+            },
+            {
+                "Date":"10/4/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"92",
+                "TempSite":"Ear",
+                "Pulse":"82",
+                "PulseOx":"99",
+                "PulseSite":"Arm",
+                "Respirations":"110",
+                "BP":"123/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"N/A",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Patient had a Headache",
+                    "Treatment":"N/A"
+                }
+            },
+            {
+                "Date":"10/5/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"92",
+                "TempSite":"Ear",
+                "Pulse":"82",
+                "PulseOx":"99",
+                "PulseSite":"Arm",
+                "Respirations":"110",
+                "BP":"123/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"N/A",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Patient had another Headache",
+                    "Treatment":"N/A"
+                }
+            }
+        ]
+    },
+
+    "JamesJimmy":{
+        "Title":"Mrs",
+        "FName":"James",
+        "MName":"B",
+        "LName":"Jimmy",
+        "BDay":"8/10/1977",
+        "Address":"180 Tilly Blvd. Pottsville PA 17901",
+        "PhoneNum":"272-451-7777",
+        "EMContactName":"Kyle Jimmy",
+        "EMContactPhone":"205-758-8989",
+        "EMRelation":"Dad",
+        "InsureProv":"Capital One",
+        "InsureNum":"7134-572",
+        "Allergies":[
+            "Peanuts"
+        ],
+        "Vitals":[
+            {
+                "Date":"10/3/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"90",
+                "TempSite":"Oral",
+                "Pulse":"75",
+                "PulseOx":"100",
+                "PulseSite":"Arm",
+                "Respirations":"100",
+                "BP":"120/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"Broken Leg",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Tripped and Broken Femur on a rock",
+                    "Treatment":"Cast"
+                }
+            },
+            {
+                "Date":"10/4/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"92",
+                "TempSite":"Ear",
+                "Pulse":"82",
+                "PulseOx":"99",
+                "PulseSite":"Arm",
+                "Respirations":"110",
+                "BP":"123/80",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"N/A",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Leg is Healing Fine",
+                    "Treatment":"Cast"
+                }
+            },
+            {
+                "Date":"10/5/2024",
+                "Doctor":"Dr. Jim Jhones",
+                "Time":"9:00AM",
+                "Temp":"52",
+                "TempSite":"Rectal",
+                "Pulse":"0",
+                "PulseOx":"0",
+                "PulseSite":"Arm",
+                "Respirations":"0",
+                "BP":"0",
+                "BPMethod":"Manuel",
+                "Notes":{
+                    "Diagnosis":"N/A",
+                    "SecDiagnosis":"N/A",
+                    "Notes":"Leg is healed",
+                    "Treatment":"Celebration"
+                }
+            }
+        ]
+    }
+}

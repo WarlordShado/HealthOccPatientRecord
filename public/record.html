@@ -25,6 +25,9 @@
 -->
 
 <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
     <body>
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
@@ -48,23 +51,29 @@
             </tr>
             <tr>
                 <td class="PatientInfo" id="PhotoContain">
-                    <img id="PatientPhoto" src="Photo\person.png" alt="person">
+                    <img id="PatientPhoto" src="" alt="person">
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">Title: </span><br>
-                    <span class="info" id="patTitle">Mr.</span>
+                    <span class="info" id="patTitle"></span>
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">First Name: </span><br>
-                    <span class="info" id="patName">John</span>
+                    <span class="info" id="patFName"></span>
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">Middle Initial: </span><br>
-                    <span class="info" id="patMiddle">J</span>
+                    <span class="info" id="patMName"></span>
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">Last Name: </span><br>
-                    <span class="info" id="patLast">Jo</span>
+                    <span class="info" id="patLName"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="PatientInfo">
+                    <span class="labelInfo">Birth Date: </span><br>
+                    <span class="info" id="patBDay"></span>
                 </td>
             </tr>
             <tr>
@@ -75,25 +84,25 @@
             <tr>
                 <td  class="PatientInfo">
                     <span class="labelInfo" >Address: </span><br>
-                    <span class="info" style="font-size:20px;" id="patAddress">252 Main St. Bethel PA 19507</span>
+                    <span class="info" style="font-size:20px;" id="patAddress"></span>
                 </td>
                 <td class="PatientInfo" colspan="3">
                     <span class="labelInfo">Phone Number: </span><br>
-                    <span class="info" id="patPhone">610-767-2423</span>
+                    <span class="info" id="patPhoneNum"></span>
                 </td>
             </tr>
             <tr>
                 <td class="PatientInfo">
                     <span class="labelInfo" >Emergency Contact Name: </span><br>
-                    <span class="info" id="patEC">Jane Doe</span>
+                    <span class="info" id="patEMContactName"></span>
                 </td>
                 <td class="PatientInfo" colspan="3">
                     <span class="labelInfo">Emergency Contact Phone Number: </span><br>
-                    <span class="info" id="patECPhone">717-768-2178</span>
+                    <span class="info" id="patEMContactPhone"></span>
                 </td>
                 <td class="PatientInfo">
                     <span class="labelInfo">Relationship: </span><br>
-                    <span class="info" id="patECRelation">Sister</span>
+                    <span class="info" id="patEMRelation"></span>
                 </td>
             </tr>
             <tr>
@@ -104,17 +113,17 @@
             <tr>
                 <td class="PatientInfo">
                     <span class="labelInfo" >Insurance Provider: </span><br>
-                    <span class="info" id="patInsurProvide">Capital One</span>
+                    <span class="info" id="patInsureProv"></span>
                 </td>
                 <td class="PatientInfo" colspan="3">
                     <span class="labelInfo">Insurance Number: </span><br>
-                    <span class="info" id="patInsurNumber">3214-614</span>
+                    <span class="info" id="patInsureNum"></span>
                 </td>
             </tr>
             <tr>
                 <td class="PatientInfo" colspan="3">
                     <span class="labelInfo">Allergies: </span><br>
-                    <span class="info" id="patAllergy">Peanuts, Penicillin, Tree Nuts</span>
+                    <span class="info" id="patAllergies"></span>
                 </td>
             </tr>
         </table>
@@ -185,5 +194,7 @@
             </form> 
         </div>
         </div>
+        <script type="module" src="Javascript/util.js"></script>
+        <script type="module" src="Javascript/RecordGen.js"></script>
     </body>
 </html>

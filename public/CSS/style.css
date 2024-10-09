@@ -135,8 +135,17 @@ body {
 }
 
 #medsInfo {
+    display:flex;
     text-align: center;
     border: 1px solid var(--bgLabel);
+}
+
+.vac {
+    margin:0 50px 0 50px;
+}
+
+.meds {
+    margin: 0 50px 0 150px;
 }
 
 #newPatForm {

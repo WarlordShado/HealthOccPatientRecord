@@ -1,22 +1,22 @@
 {
     "Patients":[
         {
-            "picLocation":"Photo/person.png",
+            "picLocation":"Photo/JohnJo.png",
             "FName":"John",
             "LName":"Jo"
         },
         {
-            "picLocation":"Photo/person2.png",
+            "picLocation":"Photo/JoJames.png",
             "FName":"Jo",
             "LName":"James"
         },
         {
-            "picLocation":"Photo/person3.png",
+            "picLocation":"Photo/JimmyJohn.png",
             "FName":"Jimmy",
             "LName":"John"
         },
         {
-            "picLocation":"Photo/person4.png",
+            "picLocation":"Photo/JamesJimmy.png",
             "FName":"James",
             "LName":"Jimmy"
         }
