@@ -67,7 +67,7 @@ function displayObj(obj){
     let displayTextVitals = `
 Time - ${obj.Time}
 
-Tempeture - 
+Temperature - 
     Reading - ${obj.Temp}
     Method - ${obj.TempSite}
 
@@ -82,7 +82,7 @@ Blood Pressure -
     `;
 
     let displayNotes = `
-Phyisician - ${obj.Doctor}
+Physician - ${obj.Doctor}
 
 Diagnosis - ${obj.Notes.Diagnosis}
 Secondary Diagnosis - ${obj.Notes.SecDiagnosis}

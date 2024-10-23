@@ -48,11 +48,10 @@ $(document).ready(function(){
 
     $("#PatientSelectTable").append(row)
 
-    $('.selectPatButton').click(function() {
+    $('.selectPatButton').click(function() { //Stores name so info can be retrieved for later calculations
         var id = $(this).attr('id')
         localStorage.setItem("name",id)
     })
-    
 
     $("#Search").on("keyup",function(){
         var value = $(this).val().toLowerCase()

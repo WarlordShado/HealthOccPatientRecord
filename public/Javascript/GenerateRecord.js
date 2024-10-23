@@ -5,13 +5,13 @@ import { URLExist } from "./util.js";
 $(document).ready(function(){
     /*
     //Use to get Data from PHP file
-    $.get("PHPFILEHERE",function(data){
+    $.get("PHP FILE HERE",function(data){
         PatientJSON = JSON.parse(data);
     })
     */
     prepareInfo()
 
-    let PatientJSON = JSON.parse(localStorage.getItem("Patient")) //ADD JSON RETRIVAL TO ALL SCRIPTS
+    let PatientJSON = JSON.parse(localStorage.getItem("Patient")) //ADD JSON retrieval TO ALL SCRIPTS
 
     const arrID = ["patTitle","patFName","patMName","patLName","patBDay","patAddress","patPhoneNum","patEMContactName","patEMContactPhone","patEMRelation","patInsureProv","patInsureNum","patAllergies"]
     let objProps = Object.keys(PatientJSON)
