@@ -1,4 +1,5 @@
-import patientsFile from "/public/JSON/patientData.json" with {type:"json"};
+import patientsFile from "../JSON/patientData.json" with {type:"json"};
+import { URLExist } from "./util.js";
 
 const JSONpatients = patientsFile.Patients;
 
@@ -8,20 +9,22 @@ $(document).ready(function(){
     let row = $("<tr></tr>")
     $.each(JSONpatients,function(index,ele){ 
         let name = (ele.FName + ele.LName).replace(/\s/g, '');
-        console.log(name)
+
+        let picLoc = URLExist(ele.picLocation) ? ele.picLocation : "Photo/default.png"
+
         var button = $(`
-            <td>
+            <td id="${name + "ButtonContain"}">
                 <div class="patientButton">
                     <table>
                     <div>
                         <tr>
                             <td>
-                                <img id="PatientPhoto" src=${ele.picLocation} alt="person"></img>
+                                <img id="PatientPhoto" src="${picLoc}" alt="person"></img>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p id=${ele.FName + ele.LName} class="selectText">${ele.FName + " " + ele.LName}</p>
+                                <p id="${name + "Display"}" class="selectText">${ele.FName + " " + ele.LName}</p>
                             </td>
                         </tr>
                         <tr>
@@ -36,7 +39,6 @@ $(document).ready(function(){
         `)
 
         row.append(button)
-        console.log(index)
 
         if((index + 1) % 4 == 0){
             $("#PatientSelectTable").append(row)
@@ -45,9 +47,20 @@ $(document).ready(function(){
     })
 
     $('.selectPatButton').click(function() {
+        alert($(this).attr('id'))
         var id = $(this).attr('id')
         localStorage.setItem("name",id)
     })
 
     $("#PatientSelectTable").append(row)
+
+    $("#Search").on("keyup",function(){
+        var value = $(this).val().toLowerCase()
+        $(".selectText").filter(function(){
+            let id = $(this).text().replace(/\s/g, '') + "ButtonContain";
+            return $("#" + id).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        })
+        
+    })
 })
+

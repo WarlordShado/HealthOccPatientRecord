@@ -3,6 +3,20 @@
     --bgLabel: #00296b;
     --textBox: #003f88;
     --text: #fdc500; 
-    --textTitle: #ffd500;
+    --textTitle: #ffd500 ;
     --border: solid black;
+    --font: calibri, sans-serif;
 }
+
+@font-face {
+    font-family: NexaRust;
+    src: url(./NexaRustSans-Trial-BlackShadow1.woff);
+}
+/*
+    --bg:   #00509d;
+    --bgLabel: #00296b;
+    --textBox: #003f88;
+    --text: #fdc500; 
+    --textTitle: #ffd500 ;
+    --border: solid black;
+*/

@@ -1,11 +1,8 @@
-import patientsFile from "/public/JSON/PatientJSONStructure.json" with {type:"json"};
-import { setNotes } from "./util.js";
-
-const JSONVital = patientsFile[localStorage.getItem("name")]["Vitals"];
-
+const JSONVital = JSON.parse(localStorage.getItem("Vital"))
 
 $(document).ready(function() {
     let currentIndex;
+    displayObj(JSONVital[0])
 
     $("#datePicker").datepicker({ //Use JQUERY date picker to get dates with ease
         dateFormat: 'mm-dd-yy'
@@ -45,6 +42,11 @@ $(document).ready(function() {
         
     });
 })
+
+function setNotes(num){
+    let numShow = document.getElementById("numShow");
+    numShow.value = num
+}
 
 function changeNotes(increase){ //Changes around the text in the previous notes tab. Work in Progress
     let numShow = document.getElementById("numShow");

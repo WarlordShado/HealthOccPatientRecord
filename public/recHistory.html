@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="CSS/vari.css">
-<link rel="stylesheet" href="CSS/style.css">
-<link rel="stylesheet" href="CSS/nav.css">
+<link rel="stylesheet" href="./CSS/vari.css">
+<link rel="stylesheet" href="./CSS/style.css">
+<link rel="stylesheet" href="./CSS/nav.css">
 
 <html>
     <head>
@@ -20,8 +20,8 @@
 
         <div class="topnavrec">
             <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="history.html">History</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="meds.html">Medication</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="recHistory.html">History</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="recMeds.html">Medication</a></p>
         </div>
 
         <div id="MainPage">
@@ -114,22 +114,22 @@
 
 <!--Form for inputting Visit Info-->
 <div id="VisitInput">
-        <label class="textLabel" for="date" >Date:</label><br>
-        <textarea class="text textBox" id="Date" name="date" cols="10" rows="1" disabled></textarea><br>
-        <label class="textLabel" for="note">Notes:</label><br>
-        <textarea class="text textBox" id="Notes" name="note" cols="110" rows="15" disabled></textarea><br>
-        <label class="textLabel" for="note">Vital Info:</label><br>
-        <textarea class="text textBox" id="VitalInfo" name="note" cols="110" rows="20" disabled></textarea><br>
-        <label class="textLabel" for="dateEnter">Enter Date:</label><br>
-        <input class="text textBox" id="datePicker" name="dateEnter" type="text"></input>
+    <label class="textLabel" for="date" >Date:</label><br>
+    <textarea class="text textBox" id="Date" name="date" cols="10" rows="1" disabled></textarea><br>
+    <label class="textLabel" for="note">Notes:</label><br>
+    <textarea class="text textBox" id="Notes" name="note" cols="110" rows="15" disabled></textarea><br>
+    <label class="textLabel" for="note">Vital Info:</label><br>
+    <textarea class="text textBox" id="VitalInfo" name="note" cols="110" rows="20" disabled></textarea><br>
+    <label class="textLabel" for="dateEnter">Enter Date:</label><br>
+    <input class="text textBox" id="datePicker" name="dateEnter" type="text"></input>
 
-        <div style="float:right;">
-            <button class="formButton historyIncButton" id="hisDec"> <--- </button>
-            <textarea class="text textBox" id="numShow" cols="1" rows="1" disabled>1</textarea>
-            <button class="formButton historyIncbutton" id="hisInc"> ---> </button>
-        </div>
+    <div style="float:right;">
+        <button class="formButton historyIncButton" id="hisDec"> <--- </button>
+        <textarea class="text textBox" id="numShow" cols="1" rows="1" disabled>1</textarea>
+        <button class="formButton historyIncbutton" id="hisInc"> ---> </button>
+    </div>
 </div>
-    <script type="module" src="Javascript/GenerateHistory.js"></script>
-    <script type="module" src="Javascript/RecordGen.js"></script>
-    <script type="module" src="Javascript/util.js"></script>
+    <script type="module" src="./Javascript/GenerateHistory.js"></script>
+    <script type="module" src="./Javascript/GenerateRecord.js"></script>
+    <script type="module" src="./Javascript/util.js"></script>
 </body>

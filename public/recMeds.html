@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="CSS/vari.css">
-<link rel="stylesheet" href="CSS/style.css">
-<link rel="stylesheet" href="CSS/nav.css">
+<link rel="stylesheet" href="./CSS/vari.css">
+<link rel="stylesheet" href="./CSS/style.css">
+<link rel="stylesheet" href="./CSS/nav.css">
 
 <html>
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </head>
     <body>
         <div class="topnav">
@@ -17,8 +19,8 @@
 
         <div class="topnavrec">
             <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="history.html">History</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="meds.html">Medication</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="recHistory.html">History</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="recMeds.html">Medication</a></p>
         </div>
 
         <div id="MainPage">
@@ -119,21 +121,22 @@
             <p class="RecordTitle">View Previous Meds & Vaccines</p>
             <div id="info">
                 <div class="VisitSection">
-                    <select name="MedListBox" class="listbox" size="5">
-                        <option value="MedOne">Med One</option>
-                        <option value="MedTwo">Med Two</option>
-                        <option value="MedThree">Med Three</option>
-                        <option value="MedFour">Med Four</option>
-                        <option value="MedFive">Med Five</option>
-                    </select>
+                    <select id="MedLBX" name="MedListBox" class="listbox" size="5"></select>
 
-                    <div id="FormButtons">
+                    <div id="FormButtons" style="padding-bottom: 60px;">
                         <button class="formButton" id="removeMed">Remove Medication</button>
                     </div>
+
+                    <select id="VacLBX" name="VacListBox" class="listbox" size="5"></select>
+
+                    
                 </div>
                 <div class="VisitSection">
-                    <label class="textLabel" for="note">Med Info:</label><br>
-                    <textarea class="text textBox" name="note" cols="90" rows="14" disabled></textarea><br>
+                    <label  class="textLabel" for="note">Med Info:</label><br>
+                    <textarea id="MedicationInfo" class="text textBox MedText" name="note" cols="90" rows="16" disabled></textarea><br>
+
+                    <label  class="textLabel" for="note">Vaccination Info:</label><br>
+                    <textarea id="VaccinationInfo" class="text textBox MedText" name="note" cols="90" rows="16" disabled></textarea><br>
                 </div><br>
             </div>
             <p class="RecordTitle">Add Medication or Vaccination</p>
@@ -144,18 +147,20 @@
                 <div class="meds">
                     <form id="Medication">
                         <p class="RecordTitle">Medication</p>
-                        <label for="date" class="textLabel">Date:</label><br>
-                        <textarea class="text textBox" name="date" cols="30" rows="1" ></textarea><br>
-                        <label for="phyisican" class="textLabel">Prescriber Name:</label><br>
-                        <textarea class="text textBox" name="phyisican" cols="30" rows="1" ></textarea><br>
+                        <label for="medDate" class="textLabel">Date:</label><br>
+                        <textarea class="text textBox" name="medDate" cols="30" rows="1" ></textarea><br>
+                        <label for="medPhyisican" class="textLabel">Prescriber Name:</label><br>
+                        <textarea class="text textBox" name="medPhyisican" cols="30" rows="1" ></textarea><br>
                         <label for="medName" class="textLabel">Med Name:</label><br>
                         <textarea class="text textBox" name="medName" cols="30" rows="1" ></textarea><br>
                         <label for="dispInsruct" class="textLabel">Dispensing Insructions:</label><br>
                         <textarea class="text textBox" name="dispInsruct" cols="30" rows="1" ></textarea><br>
-                        <label for="dosage" class="textLabel">Dosage (In Milligrams):</label><br>
-                        <textarea class="text textBox" name="dosage" cols="30" rows="1" ></textarea><br>
-                        <label for="refills" class="textLabel">Number Of Refills:</label><br>
-                        <textarea class="text textBox" name="refills" cols="30" rows="1" ></textarea><br>
+                        <label for="medPurpose" class="textLabel">Purpose:</label><br>
+                        <textarea class="text textBox" name="medPurpose" cols="30" rows="1" ></textarea><br>
+                        <label for="medDosage" class="textLabel">Dosage (In Milligrams):</label><br>
+                        <textarea class="text textBox" name="medDosage" cols="30" rows="1" ></textarea><br>
+                        <label for="medRefills" class="textLabel">Number Of Refills:</label><br>
+                        <textarea class="text textBox" name="medRefills" cols="30" rows="1" ></textarea><br>
 
                         <div id="FormButtons">
                             <button class="formButton" type="submit" value="Submit">Submit</button>
@@ -166,18 +171,20 @@
                 <div class="vac">
                     <form id="Vaccination">
                         <p class="RecordTitle">Vaccination</p>
-                        <label for="date" class="textLabel">Date:</label><br>
-                        <textarea class="text textBox" name="date" cols="30" rows="1" ></textarea><br>
-                        <label for="phyisican" class="textLabel">Prescriber Name:</label><br>
-                        <textarea class="text textBox" name="phyisican" cols="30" rows="1" ></textarea><br>
-                        <label for="medName" class="textLabel">Immunization Purpose:</label><br>
-                        <textarea class="text textBox" name="medName" cols="30" rows="1" ></textarea><br>
-                        <label for="refills" class="textLabel">Site:</label><br>
-                        <textarea class="text textBox" name="refills" cols="30" rows="1" ></textarea><br>
-                        <label for="dosage" class="textLabel">Dosage (In Milligrams):</label><br>
-                        <textarea class="text textBox" name="dosage" cols="30" rows="1" ></textarea><br>
-                        <label for="refills" class="textLabel">Date for Next Vaccine:</label><br>
-                        <textarea class="text textBox" name="refills" cols="30" rows="1" ></textarea><br>
+                        <label for="vacDate" class="textLabel">Date:</label><br>
+                        <textarea class="text textBox" name="vacDate" cols="30" rows="1" ></textarea><br>
+                        <label for="vacPhyisican" class="textLabel">Prescriber Name:</label><br>
+                        <textarea class="text textBox" name="vacPhyisican" cols="30" rows="1" ></textarea><br>
+                        <label for="vacName" class="textLabel">Vaccine Name:</label><br>
+                        <textarea class="text textBox" name="vacName" cols="30" rows="1" ></textarea><br>
+                        <label for="vacPurpose" class="textLabel">Immunization Purpose:</label><br>
+                        <textarea class="text textBox" name="vacPurpose" cols="30" rows="1" ></textarea><br>
+                        <label for="site" class="textLabel">Site:</label><br>
+                        <textarea class="text textBox" name="site" cols="30" rows="1" ></textarea><br>
+                        <label for="vacDosage" class="textLabel">Dosage (In Milligrams):</label><br>
+                        <textarea class="text textBox" name="vacDosage" cols="30" rows="1" ></textarea><br>
+                        <label for="NextDate" class="textLabel">Date for Next Vaccine:</label><br>
+                        <textarea class="text textBox" name="NextDate" cols="30" rows="1" ></textarea><br>
 
                         <div id="FormButtons">
                             <button class="formButton" type="submit" value="Submit">Submit</button>
@@ -188,8 +195,9 @@
             </div>
             
         </form>
-        <script type="module" src="Javascript/util.js"></script>
-        <script type="module" src="Javascript/RecordGen.js"></script>
+        <script type="module" src="./Javascript/util.js"></script>
+        <script type="module" src="./Javascript/GenerateRecord.js"></script>
+        <script type="module" src="./Javascript/GenerateMeds.js"></script>
     </div>
     </div>
 </body>

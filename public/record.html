@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="CSS/vari.css">
-<link rel="stylesheet" href="CSS/style.css">
-<link rel="stylesheet" href="CSS/nav.css">
+<link rel="stylesheet" href="./CSS/vari.css">
+<link rel="stylesheet" href="./CSS/style.css">
+<link rel="stylesheet" href="./CSS/nav.css">
 
 <!--
     To-Do:
@@ -10,10 +10,9 @@
         DONE - Input for Temp, Pulse, Resperations, Pulse Ox, blood pressure, and pain scale rating
         DONE - Make info for previous visits appear below form. Add button to veiw entire record
         Make patient info changable if needed
-        ALMOST DONE (Just NEED Vaccine) - Prescription Meds Tab with Vaccine Info on Person
+        DONE - Prescription Meds Tab with Vaccine Info on Person
 
     Once Server Up:
-        Start Generating Webpage with REACT_DOM
         JS to put data onto web page
         Accounts w/ Admin One to veiw everything that happens on the page
 
@@ -37,8 +36,8 @@
 
         <div class="topnavrec">
             <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="history.html">History</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="meds.html">Medication</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="recHistory.html">History</a></p>
+            <p class="linkContain"><a class="navButtonRec" href="recMeds.html">Medication</a></p>
         </div>
 
     <div id="MainPage">
@@ -142,11 +141,11 @@
                         <label class="textLabel" for="note">Notes:</label><br>
                         <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
                         <label class="textLabel" for="primaryDia">Primary Diagnosis:</label>
-                        <label class="textLabel" for="secondaryDia" style="margin-left:3vw;">Secondary Diagnosis:</label><br>
-                        <textarea class="text textBox" name="primaryDia" cols="20" rows="2"></textarea>
-                        <textarea class="text textBox" name="secondaryDia" cols="20" rows="2"></textarea><br><br>
+                        <label class="textLabel" for="secondaryDia" style="margin-left: 4.5vw;">Secondary Diagnosis:</label><br>
+                        <textarea class="text textBox" name="primaryDia" cols="30" rows="2"></textarea>
+                        <textarea class="text textBox" name="secondaryDia" cols="30" rows="2"></textarea><br><br>
                         <label class="textLabel" for="treat">Treatment Plan:</label><br>
-                        <textarea class="text textBox" name="treat" cols="50" rows="2"></textarea><br><br>
+                        <textarea class="text textBox" name="treat" cols="40" rows="2"></textarea><br><br>
                     </div>
                     <div class="VisitSection vitals">
                         <label class="textLabel" for="temp">Temperature: </label>
@@ -194,7 +193,7 @@
             </form> 
         </div>
         </div>
-        <script type="module" src="Javascript/util.js"></script>
-        <script type="module" src="Javascript/RecordGen.js"></script>
+        <script type="module" src="./Javascript/util.js"></script>
+        <script type="module" src="./Javascript/GenerateRecord.js"></script>
     </body>
 </html>

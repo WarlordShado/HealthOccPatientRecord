@@ -2,7 +2,9 @@
 
 #Search{
     margin-left:auto;
-    padding: 1.563vw;
+    margin-top:2%;
+    margin-right: 20px;
+    height:25px;
 }
 
 .topnav {
@@ -30,6 +32,7 @@
     border:1px solid var(--bg);
     border-radius: 5px;
     font-size: larger;
+    font-family: var(--font);
 }
 
 .topnavrec {
@@ -50,6 +53,7 @@
     border:1px solid var(--bg);
     border-radius: 5px;
     font-size: larger;
+    font-family: var(--font);
 }
 
 .navButtonRec:hover {
