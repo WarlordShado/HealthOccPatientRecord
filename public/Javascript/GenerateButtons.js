@@ -46,13 +46,14 @@ $(document).ready(function(){
         }
     })
 
+    $("#PatientSelectTable").append(row)
+
     $('.selectPatButton').click(function() {
         alert($(this).attr('id'))
         var id = $(this).attr('id')
         localStorage.setItem("name",id)
     })
-
-    $("#PatientSelectTable").append(row)
+    
 
     $("#Search").on("keyup",function(){
         var value = $(this).val().toLowerCase()
