@@ -13,17 +13,18 @@ $(document).ready(function(){
 
     let PatientJSON = JSON.parse(localStorage.getItem("Patient")) //ADD JSON retrieval TO ALL SCRIPTS
 
+    //Store IDs for faster generation process
     const arrID = ["patTitle","patFName","patMName","patLName","patBDay","patAddress","patPhoneNum","patEMContactName","patEMContactPhone","patEMRelation","patInsureProv","patInsureNum","patAllergies"]
-    let objProps = Object.keys(PatientJSON)
+    let objProps = Object.keys(PatientJSON)//Returns ever element in the JSON structure
     let count = 0
-    objProps.forEach(key => { //Make ARRAY with IDs in it.
+    objProps.forEach(key => { //Loops through the JSON data and finds the corresponding ID number
         $("#" + arrID[count]).text(PatientJSON[key])
         count += 1
     });
 
     let jointName = PatientJSON.FName + PatientJSON.LName
 
-    let url = URLExist("Photo/"+ jointName + ".png") ? "Photo/"+ jointName + ".png" : "Photo/default.png"
+    let url = URLExist("Photo/"+ jointName + ".png") ? "Photo/"+ jointName + ".png" : "Photo/default.png" //Checks if patient photo exists
     $("#PatientPhoto").attr("src",url)
 })
 

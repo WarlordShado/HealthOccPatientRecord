@@ -27,7 +27,12 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
-    <body>
+
+<body>
+    
+
+
+    <header id="navigation">
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
             <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
@@ -35,13 +40,14 @@
         </div>
 
         <div class="topnavrec">
-            <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="recHistory.html">History</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="recMeds.html">Medication</a></p>
+            <p class="linkContain"><a class="navButton" href="record.html">Main Record</a></p>
+            <p class="linkContain"><a class="navButton" href="recHistory.html">History</a></p>
+            <p class="linkContain"><a class="navButton" href="recMeds.html">Medication</a></p>
         </div>
+    </header>
 
-    <div id="MainPage">
-        <div id="Record" >
+<div id="MainPage">
+    <div id="Record" >
         <table id="PatientRecord" class="sticky">
             <tr >
                 <td class="PatientInfo RecordTitle" colspan="5">
@@ -130,70 +136,70 @@
 
 <!--Form for inputting Visit Info-->
 
-        <div id="Form" >
-            <form id="VisitInput">
-                <div id="info">
-                    <div class="VisitSection basicInfo">
-                        <label class="textLabel" for="reason">Phyisican Name:</label><br>
-                        <textarea class="text textBox" name="reason" cols="25" rows="2"></textarea><br><br>
-                        <label class="textLabel" for="reason">Reason for Visit:</label><br>
-                        <textarea class="text textBox" name="reason" cols="40" rows="2"></textarea><br><br>
-                        <label class="textLabel" for="note">Notes:</label><br>
-                        <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
-                        <label class="textLabel" for="primaryDia">Primary Diagnosis:</label>
-                        <label class="textLabel" for="secondaryDia" style="margin-left: 4.5vw;">Secondary Diagnosis:</label><br>
-                        <textarea class="text textBox" name="primaryDia" cols="28" rows="2"></textarea>
-                        <textarea class="text textBox" name="secondaryDia" cols="28" rows="2"></textarea><br><br>
-                        <label class="textLabel" for="treat">Treatment Plan:</label><br>
-                        <textarea class="text textBox" name="treat" cols="40" rows="2"></textarea><br><br>
-                    </div>
-                    <div class="VisitSection vitals">
-                        <label class="textLabel" for="temp">Temperature: </label>
-                        <input class="text textBox" type="text" name="temp">
-                        <label class="textLabel" for="tempSelect`"></label>
-    
-                        <select name="tempSelect" id="methodTemp" class="text textBox">
-                            <option value="" selected hidden disabled>Select Method</option>
-                            <option value="temporal">Temporal</option>
-                            <option value="oral">Oral</option>
-                            <option value="rectal">Rectal</option>
-                            <option value="axillary">Axillary</option>
-                            <option value="tympanic">Tympanic</option>
-                        </select><br><br>
-    
-                        <label class="textLabel" for="pulse">Pulse: </label>
-                        <input class="text textBox" name="pulse" type="text"><br>
-                        <label class="textLabel" for="site">Site: </label>
-                        <input class="text textBox" name="site" type="text"><br><br>
-    
-                        <label class="textLabel" for="resp">Respirations: </label>
-                        <input class="text textBox" name="resp" type="text"><br><br>
-    
-                        <label class="textLabel" for="bp">Blood Pressure: </label>
-                        <input class="text textBox" type="text" name="bp"><br>
-    
-                        <input class="textLabel" id="auto "type="radio" name="bpMethod">
-                        <label class="textLabel" for="auto">Automatic</label><br>
-    
-                        <input class="textLabel" id="manuel"type="radio" name="bpMethod">
-                        <label class="textLabel" for="manuel">Manuel</label><br><br>
-    
-                        <label class="textLabel" for="pulseOx">Pulse Ox: </label>
-                        <input class="text textBox" name="pulseOx" type="text"><br><br>
-    
-                        <label class="textLabel" for="pain">Pain Scale Rating: </label>
-                        <input class="text textBox" name="pain" type="text"><br><br><br>
-                    
-                        <div id="FormButtons">
-                            <button class="formButton" type="submit" value="Submit">Submit</button>
-                            <button class="formButton" type="reset" value="Reset">Reset</button>
-                        </div>
-                    </div><br>
+    <div id="Form" >
+        <form id="VisitInput">
+            <div id="PatientVitalInfo">
+                <div class="VisitSection basicInfo">
+                    <label class="textLabel" for="reason">Phyisican Name:</label><br>
+                    <textarea class="text textBox" name="reason" cols="25" rows="2"></textarea><br><br>
+                    <label class="textLabel" for="reason">Reason for Visit:</label><br>
+                    <textarea class="text textBox" name="reason" cols="40" rows="2"></textarea><br><br>
+                    <label class="textLabel" for="note">Notes:</label><br>
+                    <textarea class="text textBox" name="note" cols="50" rows="10"></textarea><br><br>
+                    <label class="textLabel" for="primaryDia">Primary Diagnosis:</label>
+                    <label class="textLabel" for="secondaryDia" style="margin-left: 4.5vw;">Secondary Diagnosis:</label><br>
+                    <textarea class="text textBox" name="primaryDia" cols="28" rows="2"></textarea>
+                    <textarea class="text textBox" name="secondaryDia" cols="28" rows="2"></textarea><br><br>
+                    <label class="textLabel" for="treat">Treatment Plan:</label><br>
+                    <textarea class="text textBox" name="treat" cols="40" rows="2"></textarea><br><br>
                 </div>
-            </form> 
-        </div>
-        </div>
-        <script type="module" src="./Javascript/util.js"></script>
-        <script type="module" src="./Javascript/GenerateRecord.js"></script>
-    </body>
+                <div class="VisitSection vitals">
+                    <label class="textLabel" for="temp">Temperature: </label>
+                    <input class="text textBox" type="text" name="temp">
+                    <label class="textLabel" for="tempSelect`"></label>
+    
+                    <select name="tempSelect" id="methodTemp" class="text textBox">
+                        <option value="" selected hidden disabled>Select Method</option>
+                        <option value="temporal">Temporal</option>
+                        <option value="oral">Oral</option>
+                        <option value="rectal">Rectal</option>
+                        <option value="axillary">Axillary</option>
+                        <option value="tympanic">Tympanic</option>
+                    </select><br><br>
+    
+                    <label class="textLabel" for="pulse">Pulse: </label>
+                    <input class="text textBox" name="pulse" type="text"><br>
+                    <label class="textLabel" for="site">Site: </label>
+                    <input class="text textBox" name="site" type="text"><br><br>
+    
+                    <label class="textLabel" for="resp">Respirations: </label>
+                    <input class="text textBox" name="resp" type="text"><br><br>
+    
+                    <label class="textLabel" for="bp">Blood Pressure: </label>
+                    <input class="text textBox" type="text" name="bp"><br>
+    
+                    <input class="textLabel" id="auto "type="radio" name="bpMethod">
+                    <label class="textLabel" for="auto">Automatic</label><br>
+    
+                    <input class="textLabel" id="manuel"type="radio" name="bpMethod">
+                    <label class="textLabel" for="manuel">Manuel</label><br><br>
+    
+                    <label class="textLabel" for="pulseOx">Pulse Ox: </label>
+                    <input class="text textBox" name="pulseOx" type="text"><br><br>
+    
+                    <label class="textLabel" for="pain">Pain Scale Rating: </label>
+                    <input class="text textBox" name="pain" type="text"><br><br><br>
+                    
+                    <div id="FormButtons">
+                        <button class="formButton" type="submit" value="Submit">Submit</button>
+                        <button class="formButton" type="reset" value="Reset">Reset</button>
+                    </div>
+                </div><br>
+            </div>
+        </form> 
+    </div>
+</div>
+</body>
+    <script type="module" src="./Javascript/util.js"></script>
+    <script type="module" src="./Javascript/GenerateRecord.js"></script>
 </html>

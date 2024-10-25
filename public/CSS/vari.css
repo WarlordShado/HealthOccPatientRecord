@@ -8,10 +8,6 @@
     --font: calibri, sans-serif;
 }
 
-@font-face {
-    font-family: NexaRust;
-    src: url(./NexaRustSans-Trial-BlackShadow1.woff);
-}
 /*
     --bg:   #00509d;
     --bgLabel: #00296b;

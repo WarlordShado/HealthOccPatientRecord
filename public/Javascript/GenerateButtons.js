@@ -4,13 +4,12 @@ import { URLExist } from "./util.js";
 const JSONpatients = patientsFile.Patients;
 
 $(document).ready(function(){
-    console.log(JSONpatients)
     
     let row = $("<tr></tr>")
     $.each(JSONpatients,function(index,ele){ 
-        let name = (ele.FName + ele.LName).replace(/\s/g, '');
+        let name = (ele.FName + ele.LName).replace(/\s/g, ''); //Concatinates name and removes spaces
 
-        let picLoc = URLExist(ele.picLocation) ? ele.picLocation : "Photo/default.png"
+        let picLoc = URLExist(ele.picLocation) ? ele.picLocation : "Photo/default.png" //Sets pic to default if no picture is avalibe
 
         var button = $(`
             <td id="${name + "ButtonContain"}">
@@ -54,8 +53,8 @@ $(document).ready(function(){
     })
 
     $("#Search").on("keyup",function(){
-        var value = $(this).val().toLowerCase()
-        $(".selectText").filter(function(){
+        var value = $(this).val().toLowerCase() //Gets value for search bar
+        $(".selectText").filter(function(){ //Hids patient names that dont match the value supplied
             let id = $(this).text().replace(/\s/g, '') + "ButtonContain";
             return $("#" + id).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         })

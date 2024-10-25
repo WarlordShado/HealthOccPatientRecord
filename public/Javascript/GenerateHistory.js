@@ -13,7 +13,7 @@ $(document).ready(function() {
         let date = new Date(selectDate); //turn into obj
         let dateToCheck = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear(); //Convert into usable format
         let stopCheck = false;
-        $.each(JSONVital, function(index,item) {
+        $.each(JSONVital, function(index,item) { //Checks for the first record with a matching date
             if (item.Date == dateToCheck && !stopCheck){
                 currentIndex = index + 1;
                 vitalObj = item;
@@ -76,7 +76,6 @@ Pulse -
     Pulse Ox - ${obj.PulseOx}
     
 Blood Pressure - 
-    Blood Type - ${obj.BloodType}
     Reading - ${obj.BP}
     Method - ${obj.BPMethod}
     `;

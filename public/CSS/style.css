@@ -1,59 +1,13 @@
-#VisitInput {
-    border:5px var(--border);
-    padding:0.26vw;
-}
-
-.VisitSection {
-    padding: 1vw;
-}
-
-.basicInfo {
-    border: 1px solid var(--bgLabel);
-}
-
-.vitals {
-    border: 1px solid var(--bgLabel);
-    padding:1vw 1vw 0 1vw;
-    font-size:24px;
-}
-
-#FormButtons {
-    text-align: center;
-    margin: 0.26vw;
-}
-
-#numShow {
-    font-size: large;
-}
-
-.formButton {
-    border:5px var(--border);
-    background-color: var(--textBox);
-    color: var(--text);
-    font-size: larger;
-    width: auto;
-    height: auto;
-    font-family: var(--font);
-}
-
-#PatientSelectTable tr{
-    display:flex;
-}
-
-#PatientSelectTable td{
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-}
+/*Main Styling Info*/
 
 body {
+    width:100%;
     background-color: var(--bg);
 }
 
-#info {
-    display:inline-flex;
-    flex-grow:1;
+#MainPage {
+    display:flex;
+    justify-content: center;
 }
 
 /*Used in Login Screen*/
@@ -80,26 +34,6 @@ body {
 
 #Login {
     text-align: center;
-}
-
-#MainPage {
-    display:inline-flex;
-}
-
-#Form {
-    float:right;
-}
-
-.sticky {
-    position:sticky;
-    top:0;
-}
-
-#Record {
-    float:left;
-}
-
-#Login {
     margin: auto;
     width:15.625vw;
     border: 5px var(--border);
@@ -108,14 +42,88 @@ body {
     font-size: x-large;
 }
 
-.labelInfo {
-    color: var(--textTitle);
+/*Record Styling*/
+.vitals {
+    border: 1px solid var(--bgLabel);
+    padding:1vw 1vw 0 1vw;
+    font-size:24px;
+}
+
+#VisitInput {
+    border:5px var(--border);
+    padding:0.26vw;
+}
+
+.VisitSection {
+    padding: 1vw;
+}
+
+#FormButtons {
+    text-align: center;
+    margin: 0.26vw;
+}
+
+.formButton {
+    border:5px var(--border);
+    background-color: var(--textBox);
+    color: var(--text);
+    font-size: larger;
+    width: auto;
+    height: auto;
     font-family: var(--font);
 }
 
-.info {
-    color: var(--text);
-    font-family: var(--font);
+/*Used for the patient buttons*/
+
+#PatientSelectTable tr{
+    display:flex;
+}
+
+#PatientSelectTable td{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#PatientButtonContain{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patientButton {
+    display:inline-flex;
+    text-align: center;
+}
+
+
+/*Record Tab*/
+
+#numShow {
+    font-size: large;
+}
+
+#newPatForm {
+    float:right;
+    margin-left:35vw;
+}
+
+
+.PatientInfo:not(#PhotoContain) {
+    padding: 0.521vw;
+}
+
+#PatientVitalInfo {
+    display:flex;
+}
+
+#Form {
+    float:right;
+}
+
+#Record {
+    float:left;
 }
 
 .RecordTitle {
@@ -128,10 +136,7 @@ body {
     font-family: var(--font);
 }
 
-.textLabel {
-    color: var(--text);
-    font-family: var(--font);
-}
+
 
 #PatientPhoto {
     border: 3px var(--border);
@@ -172,27 +177,53 @@ body {
     margin: 0 50px 0 150px;
 }
 
-#newPatForm {
-    float:right;
-    margin-left:35vw;
+
+
+
+
+/*Makes a list box element*/
+
+.listbox {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 24px;
+    width: 200px;
+    height: 150px;
+    margin-top:20px;
+    font-family: var(--font);
 }
+
+
+/*Basic Styling*/
+.textLabel {
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.sticky {
+    position:sticky;
+    top:0;
+}
+
+.labelInfo {
+    color: var(--textTitle);
+    font-family: var(--font);
+}
+
+.info {
+    color: var(--text);
+    font-family: var(--font);
+}
+
+
+.basicInfo {
+    border: 1px solid var(--bgLabel);
+}
+
 
 .infoSet {
     border: 5px var(--border);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.PatientInfo:not(#PhotoContain) {
-    padding: 0.521vw;
-}
-
-#PatientButtonContain{
-    margin-left:20vw;
-}
-
-.patientButton {
-    display:inline-flex;
-    text-align: center;
+    font-family: var(--font);
 }
 
 .info .labelInfo {
@@ -219,16 +250,6 @@ body {
 .selectText {
     color: var(--text);
     font-size: 24px;
-    font-family: var(--font);
-}
-
-.listbox {
-    background-color: var(--bg);
-    color: var(--text);
-    font-size: 24px;
-    width: 200px;
-    height: 150px;
-    margin-top:20px;
     font-family: var(--font);
 }
 

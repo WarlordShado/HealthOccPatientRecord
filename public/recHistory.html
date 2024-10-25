@@ -6,12 +6,12 @@
 
 <html>
     <head>
-    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    
+        <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </head>
-    <body>
+
+    <header id="navigation">
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
             <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
@@ -19,11 +19,13 @@
         </div>
 
         <div class="topnavrec">
-            <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="recHistory.html">History</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="recMeds.html">Medication</a></p>
+            <p class="linkContain"><a class="navButton" href="record.html">Main Record</a></p>
+            <p class="linkContain"><a class="navButton" href="recHistory.html">History</a></p>
+            <p class="linkContain"><a class="navButton" href="recMeds.html">Medication</a></p>
         </div>
-
+    </header>
+    
+    <body>
         <div id="MainPage">
             <div id="Record" >
             <table id="PatientRecord" class="sticky">
@@ -113,22 +115,25 @@
         </div>
 
 <!--Form for inputting Visit Info-->
-<div id="VisitInput">
-    <label class="textLabel" for="date" >Date:</label><br>
-    <textarea class="text textBox" id="Date" name="date" cols="10" rows="1" disabled></textarea><br>
-    <label class="textLabel" for="note">Notes:</label><br>
-    <textarea class="text textBox" id="Notes" name="note" cols="110" rows="15" disabled></textarea><br>
-    <label class="textLabel" for="note">Vital Info:</label><br>
-    <textarea class="text textBox" id="VitalInfo" name="note" cols="110" rows="20" disabled></textarea><br>
-    <label class="textLabel" for="dateEnter">Enter Date:</label><br>
-    <input class="text textBox" id="datePicker" name="dateEnter" type="text"></input>
+<div id="Form">
+    <div id="VisitInput" style="height:44.5vw;">
+        <label class="textLabel" for="date" >Date:</label><br>
+        <textarea class="text textBox" id="Date" name="date" cols="10" rows="1" disabled></textarea><br>
+        <label class="textLabel" for="note">Notes:</label><br>
+        <textarea class="text textBox" id="Notes" name="note" cols="110" rows="15" disabled></textarea><br>
+        <label class="textLabel" for="note">Vital Info:</label><br>
+        <textarea class="text textBox" id="VitalInfo" name="note" cols="110" rows="20" disabled></textarea><br>
+        <label class="textLabel" for="dateEnter">Enter Date:</label><br>
+        <input class="text textBox" id="datePicker" name="dateEnter" type="text"></input>
 
-    <div style="float:right;">
-        <button class="formButton historyIncButton" id="hisDec"> <--- </button>
-        <textarea class="text textBox" id="numShow" cols="1" rows="1" disabled>1</textarea>
-        <button class="formButton historyIncbutton" id="hisInc"> ---> </button>
+        <div style="float:right;">
+            <button class="formButton historyIncButton" id="hisDec"> <--- </button>
+            <textarea class="text textBox" id="numShow" cols="1" rows="1" disabled>1</textarea>
+            <button class="formButton historyIncbutton" id="hisInc"> ---> </button>
+        </div>
     </div>
 </div>
+
     <script type="module" src="./Javascript/GenerateHistory.js"></script>
     <script type="module" src="./Javascript/GenerateRecord.js"></script>
     <script type="module" src="./Javascript/util.js"></script>

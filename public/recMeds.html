@@ -10,7 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </head>
-    <body>
+    <header id="navigation">
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
             <p class="linkContain"><a class="navButton" href="newPatient.html">Create Record</a></p>
@@ -18,13 +18,14 @@
         </div>
 
         <div class="topnavrec">
-            <p class="linkContain"><a class="navButtonRec" href="record.html">Main Record</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="recHistory.html">History</a></p>
-            <p class="linkContain"><a class="navButtonRec" href="recMeds.html">Medication</a></p>
+            <p class="linkContain"><a class="navButton" href="record.html">Main Record</a></p>
+            <p class="linkContain"><a class="navButton" href="recHistory.html">History</a></p>
+            <p class="linkContain"><a class="navButton" href="recMeds.html">Medication</a></p>
         </div>
-
-        <div id="MainPage">
-            <div id="Record" >
+    </header>
+    <body >
+    <div id="MainPage">
+        <div id="Record" >
             <table id="PatientRecord" class="sticky">
                 <tr >
                     <td class="PatientInfo RecordTitle" colspan="5">
@@ -113,13 +114,13 @@
 
 <!--Form for inputting Visit Info-->
 
-    <div id="Form" >
+    <div id="Form">
         <form id="VisitInput">
 
             <!--Make Separate Section for Viewing of Vaccines-->
 
             <p class="RecordTitle">View Previous Meds & Vaccines</p>
-            <div id="info">
+            <div id="PatientVitalInfo">
                 <div class="VisitSection">
                     <select id="MedLBX" name="MedListBox" class="listbox" size="5"></select>
 
@@ -133,10 +134,10 @@
                 </div>
                 <div class="VisitSection">
                     <label  class="textLabel" for="note">Med Info:</label><br>
-                    <textarea id="MedicationInfo" class="text textBox MedText" name="note" cols="90" rows="16" disabled></textarea><br>
+                    <textarea id="MedicationInfo" class="text textBox MedText" name="note" cols="70" rows="16" disabled></textarea><br>
 
                     <label  class="textLabel" for="note">Vaccination Info:</label><br>
-                    <textarea id="VaccinationInfo" class="text textBox MedText" name="note" cols="90" rows="16" disabled></textarea><br>
+                    <textarea id="VaccinationInfo" class="text textBox MedText" name="note" cols="70" rows="16" disabled></textarea><br>
                 </div><br>
             </div>
             <p class="RecordTitle">Add Medication or Vaccination</p>

@@ -5,16 +5,16 @@ $(document).ready(function(){
     $.each(JSONMed, function(key,value){writeLBX(key,value,"MedLBX")})
     $.each(JSONVac, function(key,value){writeLBX(key,value,"VacLBX")})
     
-    document.getElementById("MedLBX").addEventListener('change',function(){
+    document.getElementById("MedLBX").addEventListener('change',function(){ //Display med when med name is selected in the listbox
         displayMed(this)
     })
 
-    document.getElementById("VacLBX").addEventListener('change',function(){
+    document.getElementById("VacLBX").addEventListener('change',function(){ //Display vac when vac name is selected in the listbox
         displayVac(this)
     })
 })
 
-function writeLBX(key,value,container){
+function writeLBX(key,value,container){ //Generates the meds from the json file
     let medName = value.MedName
     let medOption = $(`<option class="MedSelect" value="${key}">${medName}</option>`)
     $("#" + container).append(medOption)

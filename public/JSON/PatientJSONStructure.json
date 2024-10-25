@@ -1,6 +1,6 @@
 {
     "JohnJo":{
-        "Title":"Mr",
+        "Title":"Mr.",
         "FName":"John",
         "MName":"J",
         "LName":"Jo",
@@ -14,7 +14,7 @@
         "InsureNum":"3214-614",
         "Allergies":[
             "Peanuts",
-            "Penecillin",
+            "Penicillin",
             "Tree Nuts"
         ],
         "Vitals":[
@@ -80,7 +80,7 @@
             {
                 "DateMed":"10/3/2020",
                 "PrescriberName":"Dr. Jones Jhim",
-                "MedName":"Fluoxitine",
+                "MedName":"Fluoxetine",
                 "DispIns":"By Mouth once a Day",
                 "Purpose":"Anxiety",
                 "Dosage":20,
@@ -128,7 +128,7 @@
     },
 
     "JoJames":{
-        "Title":"Mrs",
+        "Title":"Mrs.",
         "FName":"Jo",
         "MName":"M",
         "LName":"James",
@@ -160,7 +160,7 @@
                     "Diagnosis":"Salmonella",
                     "SecDiagnosis":"Food Poisoning",
                     "Notes":"Raw Chicken from Chic-Fil-A",
-                    "Treatment":"Penecillin"
+                    "Treatment":"Penicillin"
                 }
             },
             {
@@ -179,7 +179,7 @@
                     "Diagnosis":"Cholera",
                     "SecDiagnosis":"N/A",
                     "Notes":"Got it from drink water form Blue Marsh",
-                    "Treatment":"Penecillin"
+                    "Treatment":"Penicillin"
                 }
             },
             {
@@ -237,7 +237,7 @@
     },
 
     "JimmyJohn":{
-        "Title":"Mr",
+        "Title":"Mr.",
         "FName":"Jimmy",
         "MName":"M",
         "LName":"John",
@@ -269,7 +269,7 @@
                     "Diagnosis":"Cold",
                     "SecDiagnosis":"N/A",
                     "Notes":"Basic Cold",
-                    "Treatment":"Penecillin"
+                    "Treatment":"Penicillin"
                 }
             },
             {
@@ -337,7 +337,7 @@
     },
 
     "JamesJimmy":{
-        "Title":"Mrs",
+        "Title":"Mrs.",
         "FName":"James",
         "MName":"B",
         "LName":"Jimmy",
@@ -368,7 +368,7 @@
                 "Notes":{
                     "Diagnosis":"Broken Leg",
                     "SecDiagnosis":"N/A",
-                    "Notes":"Tripped and Broken Femur on a rock",
+                    "Notes":"Tripped and Broke Arm on a rock",
                     "Treatment":"Cast"
                 }
             },
@@ -416,7 +416,7 @@
             {
                 "DateMed":"10/3/2020",
                 "PrescriberName":"Dr. Jones Jhim",
-                "MedName":"Addrell",
+                "MedName":"Adderall",
                 "DispIns":"By Mouth once a Day",
                 "Purpose":"ADHD",
                 "Dosage":20,
@@ -454,7 +454,7 @@
         ]
     },
     "ShrekJohnson":{
-        "Title":"Mr",
+        "Title":"Mr.",
         "FName":"Shrek",
         "MName":"B",
         "LName":"Johnson",
@@ -483,10 +483,10 @@
                 "BP":"120/80",
                 "BPMethod":"Manuel",
                 "Notes":{
-                    "Diagnosis":"Broken Leg",
+                    "Diagnosis":"Onion Breath",
                     "SecDiagnosis":"N/A",
-                    "Notes":"Tripped and Broken Femur on a rock",
-                    "Treatment":"Cast"
+                    "Notes":"Ate too many onions",
+                    "Treatment":"Breath Mints"
                 }
             },
             {
@@ -504,8 +504,8 @@
                 "Notes":{
                     "Diagnosis":"N/A",
                     "SecDiagnosis":"N/A",
-                    "Notes":"Leg is Healing Fine",
-                    "Treatment":"Cast"
+                    "Notes":"Onion Breath is Getting Better!",
+                    "Treatment":"N/A"
                 }
             },
             {
@@ -521,10 +521,10 @@
                 "BP":"0",
                 "BPMethod":"Manuel",
                 "Notes":{
-                    "Diagnosis":"N/A",
+                    "Diagnosis":"Stage 4 Onion Breath",
                     "SecDiagnosis":"N/A",
-                    "Notes":"Leg is healed",
-                    "Treatment":"Celebration"
+                    "Notes":"Onion Breath got Worse",
+                    "Treatment":"High Strength odor remover"
                 }
             }
         ]
@@ -533,9 +533,9 @@
             {
                 "DateMed":"10/3/2020",
                 "PrescriberName":"Dr. Jones Jhim",
-                "MedName":"Addrell",
+                "MedName":"Breath Mints",
                 "DispIns":"By Mouth once a Day",
-                "Purpose":"ADHD",
+                "Purpose":"Onion Breath",
                 "Dosage":20,
                 "Refills":15
             },
