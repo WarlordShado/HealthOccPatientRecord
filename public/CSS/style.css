@@ -136,8 +136,6 @@ body {
     font-family: var(--font);
 }
 
-
-
 #PatientPhoto {
     border: 3px var(--border);
     width:13.021vw;
@@ -176,10 +174,6 @@ body {
 .meds {
     margin: 0 50px 0 150px;
 }
-
-
-
-
 
 /*Makes a list box element*/
 

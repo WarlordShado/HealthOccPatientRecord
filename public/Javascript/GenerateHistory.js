@@ -17,10 +17,10 @@ $(document).ready(function() {
             if (item.Date == dateToCheck && !stopCheck){
                 currentIndex = index + 1;
                 vitalObj = item;
-                stopCheck = true;
+                stopCheck = true; //In place so if multiple notes are on one date, they dont get overriden
             }
         })
-        if (vitalObj != null){
+        if (vitalObj != null){ //Displays the Vital Object
             setNotes(currentIndex);
             displayObj(vitalObj);
         }
