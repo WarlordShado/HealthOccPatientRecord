@@ -3,7 +3,6 @@
         {"picLocation":"Photo/JohnJo.png", "FName":"John","LName":"Jo"},
         {"picLocation":"Photo/JoJames.png","FName":"Jo","LName":"James"},
         {"picLocation":"Photo/JimmyJohn.png","FName":"Jimmy","LName":"John"},
-        {"picLocation":"Photo/JamesJimmy.png","FName":"James","LName":"Jimmy"},
-        {"picLocation":"Photo/ShrekJohnson.png","FName":"Shrek","LName":"Johnson"}
+        {"picLocation":"Photo/JamesJimmy.png","FName":"James","LName":"Jimmy"}
     ]
 }

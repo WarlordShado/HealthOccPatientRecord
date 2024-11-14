@@ -1,29 +1,29 @@
-const JSONMed = JSON.parse(localStorage.getItem("Meds"))
-const JSONVac = JSON.parse(localStorage.getItem("Vac"))
+const JSONMed = JSON.parse(localStorage.getItem("Meds"));
+const JSONVac = JSON.parse(localStorage.getItem("Vac"));
 
 $(document).ready(function(){
-    $.each(JSONMed, function(key,value){writeLBX(key,value,"MedLBX")})
-    $.each(JSONVac, function(key,value){writeLBX(key,value,"VacLBX")})
+    $.each(JSONMed, function(key,value){writeLBX(key,value,"MedLBX")});
+    $.each(JSONVac, function(key,value){writeLBX(key,value,"VacLBX")});
     
     document.getElementById("MedLBX").addEventListener('change',function(){ //Display med when med name is selected in the listbox
-        displayMed(this)
-    })
+        displayMed(this);
+    });
 
     document.getElementById("VacLBX").addEventListener('change',function(){ //Display vac when vac name is selected in the listbox
-        displayVac(this)
-    })
-})
+        displayVac(this);
+    });
+});
 
 function writeLBX(key,value,container){ //Generates the meds from the json file
-    let medName = value.MedName
-    let medOption = $(`<option class="MedSelect" value="${key}">${medName}</option>`)
-    $("#" + container).append(medOption)
-}
+    let medName = value.MedName;
+    let medOption = $(`<option class="MedSelect" value="${key}">${medName}</option>`);
+    $("#" + container).append(medOption);
+};
 
 function displayVac(objContain){
-    let index = objContain.value
+    let index = objContain.value;
     
-    let obj = JSONVac[index]
+    let obj = JSONVac[index];
 
     let medInfo = `
     Date Prescribed - ${obj.DateVac}
@@ -39,15 +39,15 @@ function displayVac(objContain){
     Dosage - ${obj.Dosage} Milligrams
 
     Next Vaccination Date - ${obj.NextVac}
-    `
+    `;
 
-    $("#VaccinationInfo").val(medInfo)
+    $("#VaccinationInfo").val(medInfo);
 }
 
 function displayMed(objContain){
-    let index = objContain.value
+    let index = objContain.value;
     
-    let obj = JSONMed[index]
+    let obj = JSONMed[index];
 
     let medInfo = `
     Date Prescribed - ${obj.DateMed}
@@ -63,8 +63,8 @@ function displayMed(objContain){
     Dosage - ${obj.Dosage} Milligrams
 
     Refills - ${obj.Refills}
-    `
+    `;
 
-    $("#MedicationInfo").val(medInfo)
-}
+    $("#MedicationInfo").val(medInfo);
+};
 

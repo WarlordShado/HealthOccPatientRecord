@@ -1,0 +1,1231 @@
+{
+    "JohnJo":{
+        "Patient_Info_Table": [
+            {
+                "PatientInfoID":1,
+                "PatientTitle":"Mr.",
+                "FirstName":"John",
+                "MiddleInit":"J",
+                "LastName":"Jo",
+                "Address":"170 Main Street Bethel PA 19507",
+                "Birthday":"7/8/1997",
+                "PhoneNumber":"610-569-3030",
+                "InsuranceProvider":"Capital One",
+                "InsuranceNumber":"1923-90"
+            }
+        ],
+        "Emergency_Contact_Table": [
+            {
+                "EmergencyContactID":1,
+                "EmergencyContactPhoneNumber":"610-569-3031",
+                "EmergencyContactFirstName":"Jane",
+                "EmergencyContactLastName":"Jo",
+                "EmergencyContactRelation":"Sister"
+            }
+        ],
+        "Physician_Table": [
+            {
+                "PhysicianID":1,
+                "PhysicianFirstName":"FName",
+                "PhysicianLastName":"LName"
+            }
+        ],
+        "Todays_Visits_Table": [
+            {
+                "VisitID":1,
+                "ReasonForVisit":"Visit"
+            }
+        ],
+        "Patient_Medical_History_Table": [
+            {
+                "PatientMedicalID":1,
+                "PatientDiagnoses":1,
+                "PatientSymptoms":1,
+                "PatientVitals":1,
+                "PatientHistory":1,
+                "PatientMedications":1,
+                "PatientVaccinations":1
+            },
+            {
+                "PatientMedicalID":2,
+                "PatientDiagnoses":2,
+                "PatientSymptoms":2,
+                "PatientVitals":2,
+                "PatientHistory":2,
+                "PatientMedications":2,
+                "PatientVaccinations":2
+            },
+            {
+                "PatientMedicalID":3,
+                "PatientDiagnoses":3,
+                "PatientSymptoms":3,
+                "PatientVitals":3,
+                "PatientHistory":3,
+                "PatientMedications":3,
+                "PatientVaccinations":3
+            }
+        ],
+        "Diagnoses_Table": [
+            {
+                "DiagnosesID":1,
+                "DiagnosesPrimary":"Common Cold",
+                "DiagnosesSecondary":"N/A"
+            },
+            {
+                "DiagnosesID":2,
+                "DiagnosesPrimary":"Flu",
+                "DiagnosesSecondary":"Common Cold"
+            },
+            {
+                "DiagnosesID":3,
+                "DiagnosesPrimary":"Anemia",
+                "DiagnosesSecondary":"N/A"
+            }
+        ],
+        "Medications_Table": [
+            {
+                "MedicationsID":1,
+                "MedicationName":"Jeremy",
+                "MedicationDate":"10/24/24",
+                "MedicationPrescriber":"Prescriber",
+                "MedicationInstructions":"Instruct",
+                "MedicationPurpose":"AIDS",
+                "MedicationDosage":50,
+                "MedicationsRefills":5
+            },
+            {
+                "MedicationsID":1,
+                "MedicationName":"Jeff",
+                "MedicationDate":"10/24/24",
+                "MedicationPrescriber":"Prescriber",
+                "MedicationInstructions":"Instruct",
+                "MedicationPurpose":"ADHD",
+                "MedicationDosage":50,
+                "MedicationsRefills":5
+            },
+            {
+                "MedicationsID":1,
+                "MedicationName":"Kyle",
+                "MedicationDate":"10/24/24",
+                "MedicationPrescriber":"Prescriber",
+                "MedicationInstructions":"Instruct",
+                "MedicationPurpose":"Autism",
+                "MedicationDosage":50,
+                "MedicationsRefills":5
+            }
+        ],
+        "Vaccinations_Table": [
+            {
+                "VaccinationsID":1,
+                "VaccineDate":"10/24/24",
+                "VaccineName":"Jeff",
+                "VaccineDosage":"40",
+                "VaccinationsLastNamePresciber":"Name",
+                "VaccinationsPurpose":"Purpose",
+                "VaccineSite":"butt",
+                "VaccinationsDosageNextDoseDate":"Date"
+            }
+        ],
+        "Symptoms_Table": [
+            {
+                "SymptomsID":1,
+                "Symptoms":"Symptoms",
+                "SymptomsStartDate":"date",
+                "SymptomsEndDate":"date"
+            }
+        ],
+        "Vitals_Table": [
+            {
+                "VitalsID":1,
+                "VitalsDate":"10/12/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":1,
+                "VitalsAllergies":1,
+                "VitalsPulse":1,
+                "VitalsRespirations":1,
+                "VitalsTemperature":1
+            },
+            {
+                "VitalsID":2,
+                "VitalsDate":"10/13/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":2,
+                "VitalsAllergies":2,
+                "VitalsPulse":2,
+                "VitalsRespirations":2,
+                "VitalsTemperature":2
+            },
+            {
+                "VitalsID":3,
+                "VitalsDate":"10/14/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":3,
+                "VitalsAllergies":3,
+                "VitalsPulse":3,
+                "VitalsRespirations":3,
+                "VitalsTemperature":3
+            }
+        ],
+        "Temperature_Table": [
+            {
+                "TemperatureID":1,
+                "Temperature":"91",
+                "TemperatureSite":"ear"
+            },
+            {
+                "TemperatureID":2,
+                "Temperature":"92",
+                "TemperatureSite":"oral"
+            },
+            {
+                "TemperatureID":3,
+                "Temperature":"91",
+                "TemperatureSite":"rectal"
+            }
+        ],
+        "Respirations_Table": [
+            {
+                "RespirationsID":1,
+                "Respirations":"120"
+            },
+            {
+                "RespirationsID":2,
+                "Respirations":"121"
+            },
+            {
+                "RespirationsID":3,
+                "Respirations":"119"
+            }
+        ],
+        "Pulse_Table": [
+            {
+                "PulseID":1,
+                "Pulse":"76",
+                "PulseSite":"arm",
+                "PulseOX":"100%"
+            },
+            {
+                "PulseID":2,
+                "Pulse":"73",
+                "PulseSite":"arm",
+                "PulseOX":"98%"
+            },
+            {
+                "PulseID":3,
+                "Pulse":"78",
+                "PulseSite":"arm",
+                "PulseOX":"97%"
+            } 
+        ],
+        "Allergies_Table": [
+            {
+                "AllergiesID":1,
+                "Allergies":["Peanuts","Tree Nuts"]
+            }
+        ],
+        "Blood_Table": [
+            {
+                "BloodID":1,
+                "BloodPressure":"123/81",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":2,
+                "BloodPressure":"120/80",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":3,
+                "BloodPressure":"121/82",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Manuel"
+            }
+        ],
+        "Patient_History_Table": [
+            {
+                "HistoryPhysicainID":1,
+                "HistoryPatientID":1,
+                "HistoryPreviousVisits":1,
+                "HistorySurgical":1,
+                "HistoryFamilyMedical":1,
+                "HistoryMedical":1,
+                "HistorySocial":1
+            }
+        ],
+        "Social_History_Table": [
+            {
+                "SocialHistoryID":1,
+                "SocialLocation":"Loc",
+                "SocialDate":"Date"
+            }
+        ],
+        "Family_Medical_History_Table": [
+            {
+                "FamilyMedicalHistoryID":1,
+                "FamilyMemberRelationship":"Relation",
+                "FamilyMemberMedicalInformation":"MedInfo",
+                "FamilyMemberFirstName":"FName",
+                "FamilyMemberLastName":"LName"
+            }
+        ],
+        "Medical_History_Table":[
+            {
+                "Illness":"AIDS",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Common Cold",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Cancer",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            }
+        ],
+        "Previous_Visits_Table": [
+            {
+                "PreviousVisitsID":1,
+                "PreviousVisitsDate":"VisitDate",
+                "PreviousVisitsReason":"VisitReason"
+            }
+        ],
+        "Surgical_History_Table": [
+            {
+                "SurgicalHistoryID":1,
+                "SurgicalSurgery":"Surgery",
+                "SurgicalSurgeryDate":"Date",
+                "SurgicalSurgeon":1
+            }
+            
+        ],
+        "Surgeon_Table": [
+            {
+                "SurgeonID":1,
+                "SurgeonFirstName":"FName",
+                "SurgeonLastName":"LName"
+            }
+        ]
+    },
+    "JoJames":{
+        "Patient_Info_Table": [
+            {
+                "PatientInfoID":1,
+                "PatientTitle":"Mrs.",
+                "FirstName":"Jo",
+                "MiddleInit":"M",
+                "LastName":"James",
+                "Address":"180 Jim St. Pottsville PA 17901",
+                "Birthday":"8/10/1997",
+                "PhoneNumber":"610-767-2423",
+                "InsuranceProvider":"Capital One",
+                "InsuranceNumber":"7134-572"
+            }
+        ],
+        "Emergency_Contact_Table": [
+            {
+                "EmergencyContactID":1,
+                "EmergencyContactPhoneNumber":"250-758-8989",
+                "EmergencyContactFirstName":"Harold",
+                "EmergencyContactLastName":"James",
+                "EmergencyContactRelation":"Husband"
+            }
+        ],
+        "Physician_Table": [
+            {
+                "PhysicianID":1,
+                "PhysicianFirstName":"FName",
+                "PhysicianLastName":"LName"
+            }
+        ],
+        "Todays_Visits_Table": [
+            {
+                "VisitID":1,
+                "ReasonForVisit":"Visit"
+            }
+        ],
+        "Patient_Medical_History_Table": [
+            {
+                "PatientMedicalID":1,
+                "PatientDiagnoses":1,
+                "PatientSymptoms":1,
+                "PatientVitals":1,
+                "PatientHistory":1,
+                "PatientMedications":1,
+                "PatientVaccinations":1
+            },
+            {
+                "PatientMedicalID":2,
+                "PatientDiagnoses":2,
+                "PatientSymptoms":2,
+                "PatientVitals":2,
+                "PatientHistory":2,
+                "PatientMedications":2,
+                "PatientVaccinations":2
+            },
+            {
+                "PatientMedicalID":3,
+                "PatientDiagnoses":3,
+                "PatientSymptoms":3,
+                "PatientVitals":3,
+                "PatientHistory":3,
+                "PatientMedications":3,
+                "PatientVaccinations":3
+            }
+        ],
+        "Diagnoses_Table": [
+            {
+                "DiagnosesID":1,
+                "DiagnosesPrimary":"Salmonella",
+                "DiagnosesSecondary":"Food Poisoning"
+            },
+            {
+                "DiagnosesID":2,
+                "DiagnosesPrimary":"Cholera",
+                "DiagnosesSecondary":"N/A"
+            },
+            {
+                "DiagnosesID":3,
+                "DiagnosesPrimary":"N/A",
+                "DiagnosesSecondary":"N/A"
+            }
+        ],
+        "Medications_Table": [
+            {
+                "MedicationsID":1,
+                "MedicationName":"Topiramate",
+                "MedicationDate":"10/3/24",
+                "MedicationPrescriber":"Prescriber",
+                "MedicationInstructions":"By mouth once a day",
+                "MedicationPurpose":"Epilepsy",
+                "MedicationDosage":20,
+                "MedicationsRefills":15
+            }
+        ],
+        "Vaccinations_Table": [
+            {
+                "VaccinationsID":1,
+                "VaccineDate":"10/3/24",
+                "VaccineName":"Tdap",
+                "VaccineDosage":"50",
+                "VaccinationsLastNamePresciber":"Jhim",
+                "VaccinationsPurpose":"Tetanus, Diphtheria, and Whooping Cough",
+                "VaccineSite":"Arm",
+                "VaccinationsDosageNextDoseDate":"10/3/34"
+            },
+            {
+                "VaccinationsID":1,
+                "VaccineDate":"10/3/24",
+                "VaccineName":"Covid Vaccine",
+                "VaccineDosage":"100",
+                "VaccinationsLastNamePresciber":"Jhim",
+                "VaccinationsPurpose":"Covid 19",
+                "VaccineSite":"Arm",
+                "VaccinationsDosageNextDoseDate":"10/3/24"
+            }
+        ],
+        "Symptoms_Table": [
+            {
+                "SymptomsID":1,
+                "Symptoms":"Symptoms",
+                "SymptomsStartDate":"date",
+                "SymptomsEndDate":"date"
+            }
+        ],
+        "Vitals_Table": [
+            {
+                "VitalsID":1,
+                "VitalsDate":"10/3/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":1,
+                "VitalsAllergies":1,
+                "VitalsPulse":1,
+                "VitalsRespirations":1,
+                "VitalsTemperature":1
+            },
+            {
+                "VitalsID":2,
+                "VitalsDate":"10/13/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":2,
+                "VitalsAllergies":2,
+                "VitalsPulse":2,
+                "VitalsRespirations":2,
+                "VitalsTemperature":2
+            },
+            {
+                "VitalsID":3,
+                "VitalsDate":"10/14/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":3,
+                "VitalsAllergies":3,
+                "VitalsPulse":3,
+                "VitalsRespirations":3,
+                "VitalsTemperature":3
+            }
+        ],
+        "Temperature_Table": [
+            {
+                "TemperatureID":1,
+                "Temperature":"91",
+                "TemperatureSite":"ear"
+            },
+            {
+                "TemperatureID":2,
+                "Temperature":"92",
+                "TemperatureSite":"oral"
+            },
+            {
+                "TemperatureID":3,
+                "Temperature":"91",
+                "TemperatureSite":"rectal"
+            }
+        ],
+        "Respirations_Table": [
+            {
+                "RespirationsID":1,
+                "Respirations":"120"
+            },
+            {
+                "RespirationsID":2,
+                "Respirations":"121"
+            },
+            {
+                "RespirationsID":3,
+                "Respirations":"119"
+            }
+        ],
+        "Pulse_Table": [
+            {
+                "PulseID":1,
+                "Pulse":"76",
+                "PulseSite":"arm",
+                "PulseOX":"100%"
+            },
+            {
+                "PulseID":2,
+                "Pulse":"73",
+                "PulseSite":"arm",
+                "PulseOX":"98%"
+            },
+            {
+                "PulseID":3,
+                "Pulse":"78",
+                "PulseSite":"arm",
+                "PulseOX":"97%"
+            } 
+        ],
+        "Allergies_Table": [
+            {
+                "AllergiesID":1,
+                "Allergies":["N/A"]
+            }
+        ],
+        "Blood_Table": [
+            {
+                "BloodID":1,
+                "BloodPressure":"123/81",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":2,
+                "BloodPressure":"120/80",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":3,
+                "BloodPressure":"121/82",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Manuel"
+            }
+        ],
+        "Patient_History_Table": [
+            {
+                "HistoryPhysicainID":1,
+                "HistoryPatientID":1,
+                "HistoryPreviousVisits":1,
+                "HistorySurgical":1,
+                "HistoryFamilyMedical":1,
+                "HistoryMedical":1,
+                "HistorySocial":1
+            }
+        ],
+        "Social_History_Table": [
+            {
+                "SocialHistoryID":1,
+                "SocialLocation":"Loc",
+                "SocialDate":"Date"
+            }
+        ],
+        "Family_Medical_History_Table": [
+            {
+                "FamilyMedicalHistoryID":1,
+                "FamilyMemberRelationship":"Relation",
+                "FamilyMemberMedicalInformation":"MedInfo",
+                "FamilyMemberFirstName":"FName",
+                "FamilyMemberLastName":"LName"
+            }
+        ],
+        "Medical_History_Table":[
+            {
+                "Illness":"AIDS",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Common Cold",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Cancer",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            }
+        ],
+        "Previous_Visits_Table": [
+            {
+                "PreviousVisitsID":1,
+                "PreviousVisitsDate":"VisitDate",
+                "PreviousVisitsReason":"VisitReason"
+            }
+        ],
+        "Surgical_History_Table": [
+            {
+                "SurgicalHistoryID":1,
+                "SurgicalSurgery":"Surgery",
+                "SurgicalSurgeryDate":"Date",
+                "SurgicalSurgeon":1
+            }
+        ],
+        "Surgeon_Table": [
+            {
+                "SurgeonID":1,
+                "SurgeonFirstName":"FName",
+                "SurgeonLastName":"LName"
+            }
+        ]
+    },
+    "JimmyJohn":{
+        "Patient_Info_Table": [
+            {
+                "PatientInfoID":1,
+                "PatientTitle":"Mr.",
+                "FirstName":"Jimmy",
+                "MiddleInit":"M",
+                "LastName":"John",
+                "Address":"8910 Jimmy Pkwy Bethel PA 19507",
+                "Birthday":"7/8/1967",
+                "PhoneNumber":"215-767-8776",
+                "InsuranceProvider":"Capital One",
+                "InsuranceNumber":"7134-572"
+            }
+        ],
+        "Emergency_Contact_Table": [
+            {
+                "EmergencyContactID":1,
+                "EmergencyContactPhoneNumber":"610-767-2423",
+                "EmergencyContactFirstName":"Chole",
+                "EmergencyContactLastName":"John",
+                "EmergencyContactRelation":"Daughter"
+            }
+        ],
+        "Physician_Table": [
+            {
+                "PhysicianID":1,
+                "PhysicianFirstName":"FName",
+                "PhysicianLastName":"LName"
+            }
+        ],
+        "Todays_Visits_Table": [
+            {
+                "VisitID":1,
+                "ReasonForVisit":"Visit"
+            }
+        ],
+        "Patient_Medical_History_Table": [
+            {
+                "PatientMedicalID":1,
+                "PatientDiagnoses":1,
+                "PatientSymptoms":1,
+                "PatientVitals":1,
+                "PatientHistory":1,
+                "PatientMedications":1,
+                "PatientVaccinations":1
+            },
+            {
+                "PatientMedicalID":2,
+                "PatientDiagnoses":2,
+                "PatientSymptoms":2,
+                "PatientVitals":2,
+                "PatientHistory":2,
+                "PatientMedications":2,
+                "PatientVaccinations":2
+            },
+            {
+                "PatientMedicalID":3,
+                "PatientDiagnoses":3,
+                "PatientSymptoms":3,
+                "PatientVitals":3,
+                "PatientHistory":3,
+                "PatientMedications":3,
+                "PatientVaccinations":3
+            }
+        ],
+        "Diagnoses_Table": [
+            {
+                "DiagnosesID":1,
+                "DiagnosesPrimary":"Common Cold",
+                "DiagnosesSecondary":"N/A"
+            },
+            {
+                "DiagnosesID":2,
+                "DiagnosesPrimary":"N/A",
+                "DiagnosesSecondary":"Common Cold"
+            },
+            {
+                "DiagnosesID":3,
+                "DiagnosesPrimary":"N/A",
+                "DiagnosesSecondary":"N/A"
+            }
+        ],
+        "Medications_Table": [
+            {
+                "MedicationsID":1,
+                "MedicationName":"Ketamine",
+                "MedicationDate":"10/3/2020",
+                "MedicationPrescriber":"Dr. Jones Jhim",
+                "MedicationInstructions":"By mouth once a day",
+                "MedicationPurpose":"Depression",
+                "MedicationDosage":5,
+                "MedicationsRefills":15
+            }
+        ],
+        "Vaccinations_Table": [
+            {
+                "VaccinationsID":1,
+                "VaccineDate":"10/24/24",
+                "VaccineName":"Tdap",
+                "VaccineDosage":"40",
+                "VaccinationsLastNamePresciber":"Jhim",
+                "VaccinationsPurpose":"Tetanus, Diphtheria, and Whooping Cough",
+                "VaccineSite":"Arm",
+                "VaccinationsDosageNextDoseDate":"10/3/2034"
+            }
+        ],
+        "Symptoms_Table": [
+            {
+                "SymptomsID":1,
+                "Symptoms":"Symptoms",
+                "SymptomsStartDate":"date",
+                "SymptomsEndDate":"date"
+            }
+        ],
+        "Vitals_Table": [
+            {
+                "VitalsID":1,
+                "VitalsDate":"10/12/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":1,
+                "VitalsAllergies":1,
+                "VitalsPulse":1,
+                "VitalsRespirations":1,
+                "VitalsTemperature":1
+            },
+            {
+                "VitalsID":2,
+                "VitalsDate":"10/13/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":2,
+                "VitalsAllergies":2,
+                "VitalsPulse":2,
+                "VitalsRespirations":2,
+                "VitalsTemperature":2
+            },
+            {
+                "VitalsID":3,
+                "VitalsDate":"10/14/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":3,
+                "VitalsAllergies":3,
+                "VitalsPulse":3,
+                "VitalsRespirations":3,
+                "VitalsTemperature":3
+            }
+        ],
+        "Temperature_Table": [
+            {
+                "TemperatureID":1,
+                "Temperature":"91",
+                "TemperatureSite":"ear"
+            },
+            {
+                "TemperatureID":2,
+                "Temperature":"92",
+                "TemperatureSite":"oral"
+            },
+            {
+                "TemperatureID":3,
+                "Temperature":"91",
+                "TemperatureSite":"rectal"
+            }
+        ],
+        "Respirations_Table": [
+            {
+                "RespirationsID":1,
+                "Respirations":"120"
+            },
+            {
+                "RespirationsID":2,
+                "Respirations":"121"
+            },
+            {
+                "RespirationsID":3,
+                "Respirations":"119"
+            }
+        ],
+        "Pulse_Table": [
+            {
+                "PulseID":1,
+                "Pulse":"76",
+                "PulseSite":"arm",
+                "PulseOX":"100%"
+            },
+            {
+                "PulseID":2,
+                "Pulse":"73",
+                "PulseSite":"arm",
+                "PulseOX":"98%"
+            },
+            {
+                "PulseID":3,
+                "Pulse":"78",
+                "PulseSite":"arm",
+                "PulseOX":"97%"
+            } 
+        ],
+        "Allergies_Table": [
+            {
+                "AllergiesID":1,
+                "Allergies":["Peanuts","Tree Nuts"]
+            }
+        ],
+        "Blood_Table": [
+            {
+                "BloodID":1,
+                "BloodPressure":"123/81",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":2,
+                "BloodPressure":"120/80",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":3,
+                "BloodPressure":"121/82",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Manuel"
+            }
+        ],
+        "Patient_History_Table": [
+            {
+                "HistoryPhysicainID":1,
+                "HistoryPatientID":1,
+                "HistoryPreviousVisits":1,
+                "HistorySurgical":1,
+                "HistoryFamilyMedical":1,
+                "HistoryMedical":1,
+                "HistorySocial":1
+            }
+        ],
+        "Social_History_Table": [
+            {
+                "SocialHistoryID":1,
+                "SocialLocation":"Loc",
+                "SocialDate":"Date"
+            }
+        ],
+        "Family_Medical_History_Table": [
+            {
+                "FamilyMedicalHistoryID":1,
+                "FamilyMemberRelationship":"Relation",
+                "FamilyMemberMedicalInformation":"MedInfo",
+                "FamilyMemberFirstName":"FName",
+                "FamilyMemberLastName":"LName"
+            }
+        ],
+        "Medical_History_Table":[
+            {
+                "Illness":"AIDS",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Common Cold",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Cancer",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            }
+        ],
+        "Previous_Visits_Table": [
+            {
+                "PreviousVisitsID":1,
+                "PreviousVisitsDate":"VisitDate",
+                "PreviousVisitsReason":"VisitReason"
+            }
+        ],
+        "Surgical_History_Table": [
+            {
+                "SurgicalHistoryID":1,
+                "SurgicalSurgery":"Surgery",
+                "SurgicalSurgeryDate":"Date",
+                "SurgicalSurgeon":1
+            }
+            
+        ],
+        "Surgeon_Table": [
+            {
+                "SurgeonID":1,
+                "SurgeonFirstName":"FName",
+                "SurgeonLastName":"LName"
+            }
+        ]
+    },
+    "JamesJimmy":{
+        "Patient_Info_Table": [
+            {
+                "PatientInfoID":1,
+                "PatientTitle":"Mr.",
+                "FirstName":"James",
+                "MiddleInit":"M",
+                "LastName":"Jimmy",
+                "Address":"180 Tilly Blvd Pottsville PA 17901",
+                "Birthday":"8/10/1977",
+                "PhoneNumber":"205-758-8989",
+                "InsuranceProvider":"Capital One",
+                "InsuranceNumber":"7134-572"
+            }
+        ],
+        "Emergency_Contact_Table": [
+            {
+                "EmergencyContactID":1,
+                "EmergencyContactPhoneNumber":"610-767-2423",
+                "EmergencyContactFirstName":"Kyle",
+                "EmergencyContactLastName":"Jimmy",
+                "EmergencyContactRelation":"Dad"
+            }
+        ],
+        "Physician_Table": [
+            {
+                "PhysicianID":1,
+                "PhysicianFirstName":"FName",
+                "PhysicianLastName":"LName"
+            }
+        ],
+        "Todays_Visits_Table": [
+            {
+                "VisitID":1,
+                "ReasonForVisit":"Visit"
+            }
+        ],
+        "Patient_Medical_History_Table": [
+            {
+                "PatientMedicalID":1,
+                "PatientDiagnoses":1,
+                "PatientSymptoms":1,
+                "PatientVitals":1,
+                "PatientHistory":1,
+                "PatientMedications":1,
+                "PatientVaccinations":1
+            },
+            {
+                "PatientMedicalID":2,
+                "PatientDiagnoses":2,
+                "PatientSymptoms":2,
+                "PatientVitals":2,
+                "PatientHistory":2,
+                "PatientMedications":2,
+                "PatientVaccinations":2
+            },
+            {
+                "PatientMedicalID":3,
+                "PatientDiagnoses":3,
+                "PatientSymptoms":3,
+                "PatientVitals":3,
+                "PatientHistory":3,
+                "PatientMedications":3,
+                "PatientVaccinations":3
+            }
+        ],
+        "Diagnoses_Table": [
+            {
+                "DiagnosesID":1,
+                "DiagnosesPrimary":"Broken Leg",
+                "DiagnosesSecondary":"N/A"
+            },
+            {
+                "DiagnosesID":2,
+                "DiagnosesPrimary":"N/A",
+                "DiagnosesSecondary":"N/A"
+            },
+            {
+                "DiagnosesID":3,
+                "DiagnosesPrimary":"N/A",
+                "DiagnosesSecondary":"N/A"
+            }
+        ],
+        "Medications_Table": [
+            {
+                "MedicationsID":1,
+                "MedicationName":"Adderall",
+                "MedicationDate":"10/3/2020",
+                "MedicationPrescriber":"Dr. Jones Jhim",
+                "MedicationInstructions":"By mouth once a day",
+                "MedicationPurpose":"ADHD",
+                "MedicationDosage":20,
+                "MedicationsRefills":15
+            },
+            {
+                "MedicationsID":1,
+                "MedicationName":"Oxycodone",
+                "MedicationDate":"10/3/2020",
+                "MedicationPrescriber":"Dr. Jones Jhim",
+                "MedicationInstructions":"By mouth when needed",
+                "MedicationPurpose":"Pain Killer for Leg",
+                "MedicationDosage":5,
+                "MedicationsRefills":15
+            }
+        ],
+        "Vaccinations_Table": [
+            {
+                "VaccinationsID":1,
+                "VaccineDate":"10/3/24",
+                "VaccineName":"Tdap",
+                "VaccineDosage":"50",
+                "VaccinationsLastNamePresciber":"Jhim",
+                "VaccinationsPurpose":"Tetanus, Diphtheria, and Whooping Cough",
+                "VaccineSite":"Arm",
+                "VaccinationsDosageNextDoseDate":"10/3/34"
+            },
+            {
+                "VaccinationsID":1,
+                "VaccineDate":"10/3/24",
+                "VaccineName":"Covid Vaccine",
+                "VaccineDosage":"100",
+                "VaccinationsLastNamePresciber":"Jhim",
+                "VaccinationsPurpose":"Covid 19",
+                "VaccineSite":"Arm",
+                "VaccinationsDosageNextDoseDate":"10/3/24"
+            }
+        ],
+        "Symptoms_Table": [
+            {
+                "SymptomsID":1,
+                "Symptoms":"Symptoms",
+                "SymptomsStartDate":"date",
+                "SymptomsEndDate":"date"
+            }
+        ],
+        "Vitals_Table": [
+            {
+                "VitalsID":1,
+                "VitalsDate":"10/12/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":1,
+                "VitalsAllergies":1,
+                "VitalsPulse":1,
+                "VitalsRespirations":1,
+                "VitalsTemperature":1
+            },
+            {
+                "VitalsID":2,
+                "VitalsDate":"10/13/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":2,
+                "VitalsAllergies":2,
+                "VitalsPulse":2,
+                "VitalsRespirations":2,
+                "VitalsTemperature":2
+            },
+            {
+                "VitalsID":3,
+                "VitalsDate":"10/14/2024",
+                "VitalsTime":"9:00am",
+                "VitalsBloodInfo":3,
+                "VitalsAllergies":3,
+                "VitalsPulse":3,
+                "VitalsRespirations":3,
+                "VitalsTemperature":3
+            }
+        ],
+        "Temperature_Table": [
+            {
+                "TemperatureID":1,
+                "Temperature":"91",
+                "TemperatureSite":"ear"
+            },
+            {
+                "TemperatureID":2,
+                "Temperature":"92",
+                "TemperatureSite":"oral"
+            },
+            {
+                "TemperatureID":3,
+                "Temperature":"91",
+                "TemperatureSite":"rectal"
+            }
+        ],
+        "Respirations_Table": [
+            {
+                "RespirationsID":1,
+                "Respirations":"120"
+            },
+            {
+                "RespirationsID":2,
+                "Respirations":"121"
+            },
+            {
+                "RespirationsID":3,
+                "Respirations":"119"
+            }
+        ],
+        "Pulse_Table": [
+            {
+                "PulseID":1,
+                "Pulse":"76",
+                "PulseSite":"arm",
+                "PulseOX":"100%"
+            },
+            {
+                "PulseID":2,
+                "Pulse":"73",
+                "PulseSite":"arm",
+                "PulseOX":"98%"
+            },
+            {
+                "PulseID":3,
+                "Pulse":"78",
+                "PulseSite":"arm",
+                "PulseOX":"97%"
+            } 
+        ],
+        "Allergies_Table": [
+            {
+                "AllergiesID":1,
+                "Allergies":["Peanuts","Tree Nuts"]
+            }
+        ],
+        "Blood_Table": [
+            {
+                "BloodID":1,
+                "BloodPressure":"123/81",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":2,
+                "BloodPressure":"120/80",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Auto"
+            },
+            {
+                "BloodID":3,
+                "BloodPressure":"121/82",
+                "BloodType":"BloodType",
+                "BloodPressureMethod":"Manuel"
+            }
+        ],
+        "Patient_History_Table": [
+            {
+                "HistoryPhysicainID":1,
+                "HistoryPatientID":1,
+                "HistoryPreviousVisits":1,
+                "HistorySurgical":1,
+                "HistoryFamilyMedical":1,
+                "HistoryMedical":1,
+                "HistorySocial":1
+            }
+        ],
+        "Social_History_Table": [
+            {
+                "SocialHistoryID":1,
+                "SocialLocation":"Loc",
+                "SocialDate":"Date"
+            }
+        ],
+        "Family_Medical_History_Table": [
+            {
+                "FamilyMedicalHistoryID":1,
+                "FamilyMemberRelationship":"Relation",
+                "FamilyMemberMedicalInformation":"MedInfo",
+                "FamilyMemberFirstName":"FName",
+                "FamilyMemberLastName":"LName"
+            }
+        ],
+        "Medical_History_Table":[
+            {
+                "Illness":"AIDS",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Common Cold",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            },
+            {
+                "Illness":"Cancer",
+                "IllnessTreatment":"Medicine",
+                "IllnessStart":"9/5/24",
+                "IllnessEnd":"12/15/24"
+            }
+        ],
+        "Previous_Visits_Table": [
+            {
+                "PreviousVisitsID":1,
+                "PreviousVisitsDate":"VisitDate",
+                "PreviousVisitsReason":"VisitReason"
+            }
+        ],
+        "Surgical_History_Table": [
+            {
+                "SurgicalHistoryID":1,
+                "SurgicalSurgery":"Surgery",
+                "SurgicalSurgeryDate":"Date",
+                "SurgicalSurgeon":1
+            }
+            
+        ],
+        "Surgeon_Table": [
+            {
+                "SurgeonID":1,
+                "SurgeonFirstName":"FName",
+                "SurgeonLastName":"LName"
+            }
+        ]
+    }
+}

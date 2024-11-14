@@ -2,7 +2,7 @@ const JSONVital = JSON.parse(localStorage.getItem("Vital"))
 
 $(document).ready(function() {
     let currentIndex;
-    displayObj(JSONVital[0])
+    displayObj(JSONVital[0]);
 
     $("#datePicker").datepicker({ //Use JQUERY date picker to get dates with ease
         dateFormat: 'mm-dd-yy'
@@ -24,28 +24,26 @@ $(document).ready(function() {
             setNotes(currentIndex);
             displayObj(vitalObj);
         }
-        
     });
 
     $("#hisInc").click(() => {
-        let num = changeNotes(true)
+        let num = changeNotes(true);
         if (num < JSONVital.length){
             displayObj(JSONVital[num]);
         };
     });
 
     $("#hisDec").click(() => {
-        let num = changeNotes(false)
+        let num = changeNotes(false);
         if (num < JSONVital.length){  
             displayObj(JSONVital[num]);
         };
-        
     });
 })
 
 function setNotes(num){
     let numShow = document.getElementById("numShow");
-    numShow.value = num
+    numShow.value = num;
 }
 
 function changeNotes(increase){ //Changes around the text in the previous notes tab. Work in Progress
@@ -96,4 +94,4 @@ ${obj.Notes.Notes}
     $("#Notes").val(displayNotes);
     $("#VitalInfo").val(displayTextVitals);
 
-}
+};
