@@ -12,84 +12,88 @@
         </div>
 
         <div id="MainPage">
-            <div id="NewPatient">
-                <form id="newPatForm">
+            <!--action="Write_New_Patient.php"-->
+            <form  id="newPatForm">
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Picture: </span>
-                    <span class="text newText" name="pic" id="patPic"><input class="text textBox" type="file" form="newPatForm"></span><br>
+                    <label for="pic" class="labelInfo">Picture: </label>
+                    <input name="pic" class="text textBox newText" type="file" form="newPatForm">
                 </fieldset>
             
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Title*: </span>
-                    <span class="text newText" name="title" id="patTitle"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="title" class="labelInfo">Title: </label>
+                    <input name="title" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>
             
                 <fieldset class="infoSet">  
-                    <span class="labelInfo">First Name*: </span>
-                    <span class="text newText" name="first" id="patName"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="fName" class="labelInfo">First Name: </label>
+                    <input name="fName" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>  
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Middle Initial*: </span>
-                    <span class="text newText" name="middle" id="patMiddle"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="mInit" class="labelInfo">Middle Initial: </label>
+                    <input name="mInit" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset> 
                      
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Last Name*: </span>
-                    <span class="text newText" name="last" id="patLast"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="lName" class="labelInfo">Last Name: </label>
+                    <input name="lName" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Birth Date*: </span>
-                    <span class="text newText" name="last" id="patLast"><input class="text textBox" type="date" form="newPatForm"></span><br>
+                    <label for="bDay" class="labelInfo">Birthday: </label>
+                    <input name="bDay" class="text textBox newText" type="date" form="newPatForm">
                 </fieldset>
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo" >Address*: </span>
-                    <span class="text newText" name="address" id="patAddress"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="address" class="labelInfo">Address: </label>
+                    <input name="address" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>  
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Phone Number*: </span>
-                    <span class="text newText" name="phone" id="patPhone"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="pNum" class="labelInfo">Phone Number: </label>
+                    <input name="pNum" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>   
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo" >Emergency Contact Name*: </span>
-                    <span class="text newText" name="emercontact" id="patEC"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="emContactFName" class="labelInfo">Emergency Contact First Name: </label>
+                    <input name="emContactFName" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>     
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Emergency Contact Phone Number*: </span>
-                    <span class="text newText" name="ecphone" id="patECPhone"><input class="text textBox" type="text" form="newPatForm"></span><br>
-                </fieldset>   
-
-                <fieldset class="infoSet">
-                    <span class="labelInfo">Relationship*: </span>
-                    <span class="text newText" name="relationship" id="patECRelation"><input class="text textBox" type="text" form="newPatForm"></span><br>
-                </fieldset>   
-
-                <fieldset class="infoSet">
-                    <span class="labelInfo" >Insurance Provider*: </span>
-                    <span class="text newText" name="insurProvide" id="patInsurProvide"><input class="text textBox" type="text" form="newPatForm"></span><br>
-                </fieldset>   
-
-                <fieldset class="infoSet">
-                    <span class="labelInfo">Insurance Number*: </span>
-                    <span class="text newText" name="insurNumber" id="patInsurNumber"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="emContactLName" class="labelInfo">Emergency Contact Last Name: </label>
+                    <input name="emContactLName" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>  
 
                 <fieldset class="infoSet">
-                    <span class="labelInfo">Allergies*: </span>
-                    <span class="text newText" name="allergy" id="patAllergy"><input class="text textBox" type="text" form="newPatForm"></span><br>
+                    <label for="emContactPhone" class="labelInfo">Emergency Contact Phone Number: </label>
+                    <input name="emContactPhone" class="text textBox newText" type="text" form="newPatForm">
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <label for="relate" class="labelInfo">Relationship: </label>
+                    <input name="relate" class="text textBox newText" type="text" form="newPatForm">
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <label for="insureProv" class="labelInfo">Insurance Provider: </label>
+                    <input name="insureProv" class="text textBox newText" type="text" form="newPatForm">
+                </fieldset>   
+
+                <fieldset class="infoSet">
+                    <label for="insureNum" class="labelInfo">Insurance Number: </label>
+                    <input name="insureNum" class="text textBox newText" type="text" form="newPatForm">
+                </fieldset>  
+
+                <fieldset class="infoSet">
+                    <label for="allergies" class="labelInfo">Allergies : </label>
+                    <input name="allergies" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset> 
 
                 <fieldset class="infoSet" align="center">
                     <span><input class="formButton" type="submit" value="Submit" form="newPatForm"></span>
                     <span><input class="formButton" type="reset" value="Reset" form="newPatForm"></span>
                 </fieldset>
-                </form>
-            </div>
+            </form>
         </div>
     </body>
     

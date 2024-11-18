@@ -4,4 +4,4 @@ node_modules/
 .vscode/
 server.js
 local.session.sql
-hocc-conn_1.json
+hocc-conn.json

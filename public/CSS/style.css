@@ -54,6 +54,11 @@ body {
     padding:0.26vw;
 }
 
+#newPatForm {
+    margin-right:auto;
+    margin-left: auto;
+}
+
 .VisitSection {
     padding: 1vw;
 }
