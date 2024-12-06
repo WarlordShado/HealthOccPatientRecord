@@ -85,31 +85,11 @@
         "Medications_Table": [
             {
                 "MedicationsID":1,
-                "MedicationName":"Jeremy",
-                "MedicationDate":"10/24/24",
-                "MedicationPrescriber":"Prescriber",
-                "MedicationInstructions":"Instruct",
-                "MedicationPurpose":"AIDS",
-                "MedicationDosage":50,
-                "MedicationsRefills":5
-            },
-            {
-                "MedicationsID":1,
-                "MedicationName":"Jeff",
+                "MedicationName":"Adderall",
                 "MedicationDate":"10/24/24",
                 "MedicationPrescriber":"Prescriber",
                 "MedicationInstructions":"Instruct",
                 "MedicationPurpose":"ADHD",
-                "MedicationDosage":50,
-                "MedicationsRefills":5
-            },
-            {
-                "MedicationsID":1,
-                "MedicationName":"Kyle",
-                "MedicationDate":"10/24/24",
-                "MedicationPrescriber":"Prescriber",
-                "MedicationInstructions":"Instruct",
-                "MedicationPurpose":"Autism",
                 "MedicationDosage":50,
                 "MedicationsRefills":5
             }
@@ -117,13 +97,13 @@
         "Vaccinations_Table": [
             {
                 "VaccinationsID":1,
-                "VaccineDate":"10/24/24",
-                "VaccineName":"Jeff",
-                "VaccineDosage":"40",
-                "VaccinationsLastNamePresciber":"Name",
-                "VaccinationsPurpose":"Purpose",
-                "VaccineSite":"butt",
-                "VaccinationsDosageNextDoseDate":"Date"
+                "VaccineDate":"10/3/24",
+                "VaccineName":"Tdap",
+                "VaccineDosage":"50",
+                "VaccinationsLastNamePresciber":"Jhim",
+                "VaccinationsPurpose":"Tetanus, Diphtheria, and Whooping Cough",
+                "VaccineSite":"Arm",
+                "VaccinationsDosageNextDoseDate":"10/3/34"
             }
         ],
         "Symptoms_Table": [

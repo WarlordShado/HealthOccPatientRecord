@@ -1,4 +1,5 @@
-import patientsFile from "../JSON/patientData.json" with {type:"json"};
+const fs = require("fs")
+import patientsFile from "../JSON/patientPhotoData.json" with {type:"json"};
 import { URLExist } from "./util.js";
 
 const JSONpatients = patientsFile.Patients;
@@ -46,6 +47,12 @@ $(document).ready(function(){
     });
 
     $("#PatientSelectTable").append(row);
+
+    $('#newPatForm').submit(function() { //Get the File and Upload it. Create Entry in patientPhotoData.json
+        let fNameVal = $("input[name='fName']").val()
+        let lNameVal = $("input[name='lName']").val()
+        alert(nameVal)
+    });
 
     $('.selectPatButton').click(function() { //Stores name so info can be retrieved for later calculations
         var id = $(this).attr('id');

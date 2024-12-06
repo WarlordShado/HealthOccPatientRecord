@@ -4,6 +4,11 @@
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="CSS/nav.css">
 <html>
+    <head>
+        <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    </head>>
     <body>
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
@@ -12,8 +17,8 @@
         </div>
 
         <div id="MainPage">
-            <!--action="Write_New_Patient.php"-->
-            <form  id="newPatForm">
+            <!--action="./PHP/Get_Patient_Photo.php" method="POST"-->
+            <form id="newPatForm">
                 <fieldset class="infoSet">
                     <label for="pic" class="labelInfo">Picture: </label>
                     <input name="pic" class="text textBox newText" type="file" form="newPatForm">
@@ -90,11 +95,11 @@
                 </fieldset> 
 
                 <fieldset class="infoSet" align="center">
-                    <span><input class="formButton" type="submit" value="Submit" form="newPatForm"></span>
+                    <span><input class="formButton" id="newPatientSubmitBtn" type="submit" value="Submit" form="newPatForm"></span>
                     <span><input class="formButton" type="reset" value="Reset" form="newPatForm"></span>
                 </fieldset>
             </form>
         </div>
     </body>
-    
+    <script type="module" src="./Javascript/GenerateButtons.js"></script>
 </html>
