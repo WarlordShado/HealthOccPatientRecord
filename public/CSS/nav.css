@@ -49,8 +49,6 @@
     font-family: var(--font);
 }
 
-
-
 .navButton:hover {
     background-color: var(--bgLabel);
     border:1px solid var(--textTitle);

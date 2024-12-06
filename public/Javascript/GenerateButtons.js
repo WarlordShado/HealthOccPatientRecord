@@ -1,4 +1,4 @@
-const fs = require("fs")
+//const fs = require("fs")
 import patientsFile from "../JSON/patientPhotoData.json" with {type:"json"};
 import { URLExist } from "./util.js";
 

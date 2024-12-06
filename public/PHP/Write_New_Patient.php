@@ -48,7 +48,7 @@ $sql = "INSERT INTO 'AllergiesTable' VALUES ('$patientcount', '$allergies' )" ;
 if ($conn->multi_query($sql) === TRUE) {
     echo "Patient Added";
 } else {
-    echo "Wrtie Error: " . $sql . $conn->error;
+    echo "Write Error: " . $sql . $conn->error;
 }
 
 $conn->close();

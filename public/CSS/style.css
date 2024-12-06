@@ -15,10 +15,10 @@ body {
     text-align: center;
     font-size:5vw;
     font-family: var(--font);
-    background: -webkit-linear-gradient(var(--text),#f8af9b,var(--text));
+    background: var(--gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    -webkit-text-stroke: 1px gold;
 }
 
 #subTitle {
@@ -27,8 +27,9 @@ body {
     margin-top:-5vw;
     font-size:2.5vw;
     font-family: var(--font);
-    background: -webkit-linear-gradient(var(--text),#f8af9b,var(--text));
+    background: var(--gradient);
     background-clip: text;
+    -webkit-text-stroke: 0.5px gold;
     -webkit-text-fill-color: transparent;
 }
 
@@ -44,7 +45,6 @@ body {
 
 /*Record Styling*/
 .vitals {
-    border: 1px solid var(--bgLabel);
     padding:1vw 1vw 0 1vw;
     font-size:24px;
 }
@@ -63,7 +63,7 @@ body {
     padding: 1vw;
 }
 
-#FormButtons {
+.FormButtonsContainter {
     text-align: center;
     margin: 0.26vw;
 }
@@ -212,25 +212,12 @@ body {
 .info {
     color: var(--text);
     font-family: var(--font);
+    font-size: 1.302vw;
 }
-
-
-.basicInfo {
-    border: 1px solid var(--bgLabel);
-}
-
 
 .infoSet {
     border: 5px var(--border);
     font-family: var(--font);
-}
-
-.info .labelInfo {
-    text-align: center;
-}
-
-.info {
-    font-size: 1.302vw;
 }
 
 .text {
@@ -246,19 +233,18 @@ body {
     font-family: var(--font);
 }
 
-.selectText {
+.selectText { /*Created on the Patient Buttons. Search Bar uses it*/
     color: var(--text);
     font-size: 24px;
     font-family: var(--font);
 }
 
-.newText {
+.newText { /*Used in New Record*/
     margin-left:0.521vw;
     float: right;
 }
 
-.submit {
+.submit { /*Used on Submit Button*/
     text-align: center;
     column-span: 1;
 }
-
