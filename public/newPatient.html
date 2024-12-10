@@ -8,7 +8,7 @@
         <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    </head>>
+    </head>
     <body>
         <div class="topnav">
             <p class="linkContain"><a class="navButton" href="veiwPatient.html">View Records</a></p>
@@ -17,11 +17,10 @@
         </div>
 
         <div id="MainPage">
-            <!--action="./PHP/Get_Patient_Photo.php" method="POST"-->
-            <form id="newPatForm">
+            <form id="newPatForm" action="./PHP/Write_New_Patient.php" method="POST">
                 <fieldset class="infoSet">
                     <label for="pic" class="labelInfo">Picture: </label>
-                    <input name="pic" class="text textBox newText" type="file" form="newPatForm">
+                    <input name="pic" class="text textBox newText" type="file" form="newPatForm" formenctype="multipart/form-data">
                 </fieldset>
             
                 <fieldset class="infoSet">
@@ -29,10 +28,10 @@
                     <input name="title" class="text textBox newText" type="text" form="newPatForm">
                 </fieldset>
             
-                <fieldset class="infoSet">  
+                <fieldset class="infoSet">
                     <label for="fName" class="labelInfo">First Name: </label>
                     <input name="fName" class="text textBox newText" type="text" form="newPatForm">
-                </fieldset>  
+                </fieldset>
 
                 <fieldset class="infoSet">
                     <label for="mInit" class="labelInfo">Middle Initial: </label>

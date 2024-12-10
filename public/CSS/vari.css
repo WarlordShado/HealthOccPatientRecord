@@ -6,7 +6,7 @@
     --textTitle: #ffd500 ;
     --border: solid black;
     --font: calibri, sans-serif;
-    --gradient: -webkit-linear-gradient(90deg, rgba(0,102,255,1)28%, rgba(248,175,155,1)40%, rgba(255,215,0,1) 100%)
+    --gradient: -webkit-linear-gradient(90deg, rgba(0,102,255,1)28%, rgba(248,175,155,1)40%, rgba(255,215,0,40) 100%)
 }
 
 /*
@@ -16,5 +16,5 @@
     --text: #fdc500; 
     --textTitle: #ffd500 ;
     --border: solid black;
-    --grad: gold,#f8af9b,rgb(0, 102, 255)
+    --grad: 90deg, rgba(0,102,255,1)28%, rgba(248,175,155,1)40%, rgba(255,215,0,1) 100%
 */

@@ -1,4 +1,3 @@
-//const fs = require("fs")
 import patientsFile from "../JSON/patientPhotoData.json" with {type:"json"};
 import { URLExist } from "./util.js";
 
@@ -61,7 +60,7 @@ $(document).ready(function(){
 
     $("#Search").on("keyup",function(){
         var value = $(this).val().toLowerCase(); //Gets value for search bar
-        $(".selectText").filter(function(){ //Hids patient names that dont match the value supplied
+        $(".selectText").filter(function(){ //Hides patient names that dont match the value supplied
             let id = $(this).text().replace(/\s/g, '') + "ButtonContain";
             return $("#" + id).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         });

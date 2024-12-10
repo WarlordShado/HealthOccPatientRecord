@@ -5,7 +5,7 @@ import { URLExist, reformatJSON } from "./util.js";
 $(document).ready(function(){
     /*
     //Use to get Data from PHP file
-    $.get("PHP FILE HERE",function(data){
+    $.get("../PHP/Get_Patient.php",function(data){
         PatientJSON = JSON.parse(data);
     })
     */

@@ -114,7 +114,6 @@ body {
     margin-left:35vw;
 }
 
-
 .PatientInfo:not(#PhotoContain) {
     padding: 0.521vw;
 }
@@ -192,14 +191,13 @@ body {
     font-family: var(--font);
 }
 
-
 /*Basic Styling*/
 .textLabel {
     color: var(--text);
     font-family: var(--font);
 }
 
-.sticky {
+.sticky { /*Makes the patient record move with the scroll*/
     position:sticky;
     top:0;
 }
@@ -215,7 +213,7 @@ body {
     font-size: 1.302vw;
 }
 
-.infoSet {
+.infoSet { /*Used in New Patient*/
     border: 5px var(--border);
     font-family: var(--font);
 }

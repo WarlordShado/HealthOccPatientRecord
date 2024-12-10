@@ -5,3 +5,4 @@ node_modules/
 server.js
 local.session.sql
 hocc-conn.json
+*.php
